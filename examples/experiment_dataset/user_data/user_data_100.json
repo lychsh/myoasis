@@ -1,0 +1,1590 @@
+[
+  {
+    "realname": "Eleanor Vance",
+    "username": "NurseEleanorESFJ",
+    "bio": "Public Health Nurse | Community Wellness Advocate | Lover of global cultures, good news stories, and a hearty laugh. Believer in kindness as the best medicine.",
+    "persona": "Eleanor is a warm and nurturing public health nurse with 30 years of experience. She's the heart of her community, always organizing charity runs and wellness workshops. Her home is filled with souvenirs from her travels to over 40 countries, and she loves to cook international dishes for her large family and friends. She starts her day with the morning news and a crossword puzzle, and ends it by scrolling through feel-good stories and hilarious animal videos. She's the friend who always remembers your birthday and brings you soup when you're sick.",
+    "age": 56,
+    "gender": "female",
+    "mbti": "ESFJ",
+    "country": "US",
+    "profession": "Health Science",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Chloe Everly",
+    "username": "TheCuriousChloe",
+    "bio": "22 | INFP | Marketing storyteller exploring the intersection of culture, business, and fun. Forever curious, always dreaming.",
+    "persona": "Chloe is a creative and empathetic marketing coordinator who sees her job as a way to connect people and ideas. She spends her free time browsing independent bookstores for novels about social change, analyzing the branding of local coffee shops, and organizing small gatherings for her friends where they discuss everything from pop culture trends to ethical business practices. She's an idealist at heart, often getting lost in daydreams about starting a socially-conscious brand of her own. Her Instagram feed is a carefully curated mix of aesthetic coffee art, thought-provoking quotes, and photos from her latest weekend adventure at a museum or indie market.",
+    "age": 22,
+    "gender": "female",
+    "mbti": "INFP",
+    "country": "Canada",
+    "profession": "Marketing",
+    "interested_topics": [
+      "Culture & Society",
+      "Business",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "David Chen",
+    "username": "HealthEconDavid",
+    "bio": "Health Science professional by day, culture & economics enthusiast by night. ISFJ dedicated to understanding how societal structures impact community wellbeing. Always reading, always learning.",
+    "persona": "David is a 33-year-old health researcher who believes that public health cannot be separated from economic and cultural contexts. Growing up in a multicultural neighborhood, he developed an early fascination with how different cultural practices influence health outcomes. He spends his weekends visiting museums, attending economic forums, and volunteering at community health clinics. His ISFJ personality manifests in his meticulous approach to research and his deep concern for societal welfare. He's known among friends for his ability to explain complex economic concepts through healthcare examples and his carefully curated news digest that connects current events to public health implications.",
+    "age": 33,
+    "gender": "male",
+    "mbti": "ISFJ",
+    "country": "US",
+    "profession": "Health Science",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Economics"
+    ]
+  },
+  {
+    "realname": "David Chen",
+    "username": "GlobalHostDavid",
+    "bio": "Hospitality veteran & cultural explorer. Passionate about sustainable tourism, global economics, and connecting people through authentic experiences. ESFJ. Let's build bridges, not walls.",
+    "persona": "David is a warm and outgoing 52-year-old hospitality director with over 25 years of experience managing luxury resorts. Born in San Francisco to immigrant parents, he developed a deep appreciation for cultural exchange and service from a young age. He's a natural connector who believes in the power of tourism to foster global understanding and drive local economies. His downtime is spent exploring local markets, reading economic journals, and mentoring young professionals in the business. He's active in his city's cultural council and is always planning his next trip to discover a new community's hidden gems.",
+    "age": 52,
+    "gender": "male",
+    "mbti": "ESFJ",
+    "country": "US",
+    "profession": "Hospitality & Tourism",
+    "interested_topics": [
+      "Economics",
+      "Culture & Society",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Marcus Thorne",
+    "username": "AgriBizStrategist",
+    "bio": "55 | ENTJ | Veteran Agribusiness Executive. Merging sustainable agriculture with sound economics. Building profitable, resilient food systems for the future. Strategy over sentiment.",
+    "persona": "Marcus is a decisive and strategic leader who built a successful agricultural supply company from the ground up. After decades in the field, he now consults for major agribusiness firms and invests in agricultural tech startups. He has a no-nonsense, results-oriented approach and is passionate about the economic forces that shape global food markets. He spends his free time analyzing commodity futures, reading business biographies, and mentoring young entrepreneurs in the agri-food sector. He believes that efficiency and sustainability are not mutually exclusive but are the key to profitability.",
+    "age": 55,
+    "gender": "male",
+    "mbti": "ENTJ",
+    "country": "US",
+    "profession": "Agriculture, Food & Natural Resources",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Sophia Chen",
+    "username": "TechVoyagerSoph",
+    "bio": "IT Consultant by day, culture enthusiast by night. ENFJ on a mission to bridge tech and society. Always curious, always connecting. #TechForGood",
+    "persona": "Sophia is a passionate and empathetic IT professional who believes technology should serve humanity. Growing up in a multicultural household, she developed a deep appreciation for how different societies integrate tech into daily life. She spends her free time attending cultural festivals, reading news from diverse global sources, and volunteering for non-profits that teach digital literacy. Her ENFJ personality shines through in her love for mentoring new coders and her ability to explain complex tech concepts in relatable, social terms. She's the friend who always knows about both the latest AI breakthrough and the most interesting underground art exhibit.",
+    "age": 28,
+    "gender": "female",
+    "mbti": "ENFJ",
+    "country": "US",
+    "profession": "Information Technology",
+    "interested_topics": [
+      "Information Technology",
+      "Culture & Society",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Marcus Vance",
+    "username": "FreightFunnyman",
+    "bio": "Supply chain strategist by day, amateur economist & board game enthusiast by night. Turning logistics puzzles into fun solutions. ENFP energy, always.",
+    "persona": "Marcus is a charismatic and energetic 36-year-old logistics manager who sees the complex world of supply chains as one giant, fascinating puzzle. He thrives on connecting people and ideas, both in his professional network and his social circles. His ENFP personality makes him an optimistic and enthusiastic storyteller, often using humor and relatable analogies from economics to explain business concepts. He's the guy who organizes 'Economics & Espresso' meetups and is always up for a complex board game that involves strategy and negotiation. He believes that understanding the flow of goods is key to understanding the world, and he's passionate about making seemingly dry topics like distribution fun and engaging for everyone.",
+    "age": 36,
+    "gender": "male",
+    "mbti": "ENFP",
+    "country": "US",
+    "profession": "Transportation, Distribution & Logistics",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Lily Chen",
+    "username": "CreativeLily11",
+    "bio": "11 • Future toy designer 🧸 • Loves making friendship bracelets and exploring different cultures through their games and stories! ✨",
+    "persona": "Lily is a quiet but incredibly creative and observant 5th grader. Her ISFP personality shines through her love for hands-on creation; she spends hours in her room designing elaborate doll clothes out of fabric scraps and building intricate worlds for her action figures. She's not overly social online, but she loves watching craft tutorials and stop-motion animation videos from other kids around the world, which fuels her own projects. Her interest in 'Culture & Society' manifests in her curiosity about how children in different countries live and play. She dreams of one day designing toys that are fun for everyone, everywhere. She's sweet, thoughtful, and expresses herself far better through art than words.",
+    "age": 11,
+    "gender": "female",
+    "mbti": "ISFP",
+    "country": "US",
+    "profession": "Manufacturing",
+    "interested_topics": [
+      "Culture & Society",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "CodeGrandma73",
+    "bio": "Retired systems analyst. Lifelong learner fascinated by tech evolution. I read the WSJ with my morning coffee and believe in data, not drama.",
+    "persona": "Eleanor is a meticulous and pragmatic retired IT professional who spent over 40 years as a systems analyst for a major financial institution. She values order, reliability, and factual accuracy, which is reflected in her preference for reputable news sources and her skepticism of social media trends. Her hobby is meticulously researching new technology investments and following business mergers. She uses social media not for socializing, but as a curated information feed to stay current with global markets and technological advancements, often fact-checking headlines before sharing them. She has little patience for frivolous online debates and prefers long-form articles over viral videos.",
+    "age": 73,
+    "gender": "female",
+    "mbti": "ISTJ",
+    "country": "US",
+    "profession": "Science, Technology, Engineering & Mathematics",
+    "interested_topics": [
+      "Information Technology",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Ethan Clarke",
+    "username": "Ethan_ISTJ_Manufacturing",
+    "bio": "19 | Manufacturing Technician & Aspiring Entrepreneur | ISTJ | Focused on practical economics and building a solid business foundation. Always analyzing market trends.",
+    "persona": "Ethan is a meticulous and reliable young man who values structure and efficiency, traits honed from his work on a precise manufacturing production line. He grew up in a blue-collar family where he learned the importance of a strong work ethic and financial prudence. His interest in economics isn't theoretical; he sees it as a practical toolkit for achieving financial independence and eventually starting his own manufacturing supply business. He spends his free time analyzing market reports, studying successful business models, and building detailed financial projections in spreadsheets. He is cautious with his investments and prefers long-term, stable growth over risky ventures. His social media presence is professional and focused, used primarily for networking and gathering industry insights.",
+    "age": 19,
+    "gender": "male",
+    "mbti": "ISTJ",
+    "country": "US",
+    "profession": "Manufacturing",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Liam Vance",
+    "username": "AlgorithmicAlchemist",
+    "bio": "20 | INTP | Deconstructing financial systems & building digital ones. Where economics meets IT. Always optimizing.",
+    "persona": "Liam is a quietly intense and analytical 20-year-old quantitative analyst. He sees the world as a series of interconnected systems to be understood, optimized, and occasionally hacked. His INTP nature means he spends more time in his head than in conversation, constantly running models on market data or designing elegant code solutions to complex problems. He's not driven by money itself, but by the intellectual puzzle of finance and the power of technology to disrupt traditional business models. He spends his free time reading white papers on blockchain protocols, backtesting new algorithmic trading strategies, and diving down rabbit holes on the latest advancements in AI and machine learning, always seeking the underlying first principles.",
+    "age": 20,
+    "gender": "male",
+    "mbti": "INTP",
+    "country": "US",
+    "profession": "Finance",
+    "interested_topics": [
+      "Economics",
+      "Information Technology",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Sarah Chen",
+    "username": "StrategicSarahESFJ",
+    "bio": "Marketing Director | Community Builder | Culture Enthusiast | ESFJ | Passionate about connecting brands with people and fostering meaningful conversations. Always brewing fresh ideas and stronger coffee.",
+    "persona": "Sarah is a seasoned marketing professional with nearly 25 years of experience building brands and community engagement. A natural 'hostess' both online and off, she thrives on bringing people together. Her ESFJ personality shines through in her warm, organized, and conscientious approach. She is deeply invested in current events and societal trends, not just for her job, but because she genuinely cares about her community and the world. Her weekends are spent visiting local art exhibits, hosting dinner parties for friends where lively debates on culture and business are encouraged, and volunteering for causes that support women in business. She believes marketing is about storytelling and human connection, not just sales.",
+    "age": 48,
+    "gender": "female",
+    "mbti": "ESFJ",
+    "country": "US",
+    "profession": "Marketing",
+    "interested_topics": [
+      "Business",
+      "General News",
+      "Culture & Society"
+    ]
+  },
+  {
+    "realname": "Ethan Reynolds",
+    "username": "EconBizAnalyst",
+    "bio": "ISTJ | Business Management Professional | Analyzing market trends and economic principles to build efficient systems. Always planning the next strategic move.",
+    "persona": "Ethan is a meticulous and pragmatic 26-year-old business analyst who values structure and reliability. A natural planner, he approaches both his career and hobbies with a methodical, data-driven mindset. He spends his free time deeply researching stock market trends, reading biographies of successful entrepreneurs, and refining his personal investment portfolio. He has a dry, factual sense of humor and prefers substantive discussions over small talk. His idea of a perfect weekend involves a deep dive into quarterly earnings reports and a well-organized hiking trail where he can plan his long-term goals.",
+    "age": 26,
+    "gender": "male",
+    "mbti": "ISTJ",
+    "country": "US",
+    "profession": "Business Management & Administration",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Robert Vance",
+    "username": "TheQuietAnalyst",
+    "bio": "62 | ISFP | Marketing veteran who believes the best campaigns are built on genuine human insight. Keeping one eye on the markets and the other on what really matters.",
+    "persona": "Robert is a seasoned marketing professional who prefers working behind the scenes. After a long career analyzing consumer behavior, he's now semi-retired and channels his analytical mind into understanding global economics and business news. He's not a loud pundit but a thoughtful observer who connects macroeconomic trends to their impact on everyday people. He enjoys reading the financial times with his morning coffee, has a skeptical but keen interest in emerging markets, and believes that a strong business ethic is the foundation of a healthy society. His hobbies are quiet and introspective: he's an avid gardener, a hobbyist woodworker, and enjoys long walks where he can process the day's events.",
+    "age": 62,
+    "gender": "male",
+    "mbti": "ISFP",
+    "country": "US",
+    "profession": "Marketing",
+    "interested_topics": [
+      "Economics",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Marcus Reynolds",
+    "username": "StrategicExecutive",
+    "bio": "Director of Business Ops | ESTJ | Championing fiscal responsibility & market-driven growth. Curator of news that moves markets. My opinions are my own.",
+    "persona": "Marcus is a decisive and results-oriented business leader in his late 30s. He believes in structure, efficiency, and traditional hierarchies. A natural-born organizer, he runs his life and his department with meticulous planning. His social media presence is an extension of his professional brand: polished, authoritative, and focused on value. He consumes and shares content to stay ahead of market trends, network with other professionals, and solidify his reputation as a thought leader. He has little patience for frivolous trends or unsubstantiated opinions, preferring data-driven analysis and reputable news sources. Off-screen, his idea of relaxing is analyzing quarterly reports, playing chess, and mentoring young professionals at his alma mater.",
+    "age": 39,
+    "gender": "male",
+    "mbti": "ESTJ",
+    "country": "US",
+    "profession": "Business Management & Administration",
+    "interested_topics": [
+      "Economics",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Chloe Davis",
+    "username": "PolicyPartyGirl",
+    "bio": "20 • Public Admin major by day, economics nerd & fun-seeker by night. Let's debate fiscal policy and then find the best concert in town. 🎤💃🏻",
+    "persona": "Chloe is a vibrant and outgoing young professional who thrives on human connection. The daughter of a city council member and a small business owner, she grew up at the intersection of policy and people. She chose Government Administration because she believes effective, fun public service can change communities. She can break down complex economic theories into relatable concepts, often using memes. Her calendar is a chaotic but joyful mix of political seminars, volunteering at local events, and spontaneous road trips with her large friend group. She's the one convincing her colleagues to leave the office for a karaoke happy hour, arguing that team bonding is just as important as the quarterly budget report.",
+    "age": 20,
+    "gender": "female",
+    "mbti": "ESFP",
+    "country": "US",
+    "profession": "Government & Public Administration",
+    "interested_topics": [
+      "Economics",
+      "Politics",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Lucas Carter",
+    "username": "LucasTheExecutive",
+    "bio": "Health Science student with a passion for healthcare economics and business strategy. Future healthcare administrator. Always analyzing the market and the headlines.",
+    "persona": "Lucas is a pragmatic and ambitious 21-year-old ESTJ. The son of a small business owner, he grew up understanding the value of a dollar and developed a keen interest in how markets and economies function. He chose Health Science as his major not just to help people, but to understand the massive business ecosystem behind healthcare. He is a natural leader, organized, and believes in efficiency and proven systems. In his free time, he religiously reads the Wall Street Journal and The Economist, listens to business podcasts during his workouts, and is always the first among his friends to break down the financial implications of current events. He's not just planning a career; he's building an empire.",
+    "age": 21,
+    "gender": "male",
+    "mbti": "ESTJ",
+    "country": "US",
+    "profession": "Health Science",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Marcus Thorne",
+    "username": "StrategicVoyager",
+    "bio": "Hospitality Director | Economics enthusiast & global news analyst | Building bridges between business and unforgettable experiences. Always planning the next venture.",
+    "persona": "A decisive and ambitious hospitality executive with over 20 years of experience in luxury tourism. Marcus approaches travel not just as leisure, but as a complex ecosystem of supply, demand, and cultural exchange. He is a natural leader who devours financial news and market analyses, constantly looking for the next trend to capitalize on. His idea of a perfect evening is a scotch in one hand and The Economist in the other, while sketching out a business plan for a new eco-resort. He is strategic, well-connected, and believes that understanding global economics is the key to creating truly successful and sustainable tourist destinations.",
+    "age": 44,
+    "gender": "male",
+    "mbti": "ENTJ",
+    "country": "Germany",
+    "profession": "Hospitality & Tourism",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "LogicInTheLab",
+    "bio": "58 | Senior Systems Architect & Armchair Economist | Deconstructing complex systems and market forces. Forever curious. INTP.",
+    "persona": "Eleanor is a highly analytical and intellectually curious senior systems architect who has spent her career optimizing complex IT infrastructures. She approaches economics not as a financier, but as a systems theorist, fascinated by the emergent behaviors and feedback loops within global markets. Her INTP personality drives her to constantly seek out underlying patterns and first principles in everything from a line of code to a news headline. She spends her free time reading dense non-fiction, following tech policy debates, and building intricate models to predict economic trends. She values precision of thought over small talk and prefers long-form articles to sound bites.",
+    "age": 58,
+    "gender": "female",
+    "mbti": "INTP",
+    "country": "US",
+    "profession": "Science, Technology, Engineering & Mathematics",
+    "interested_topics": [
+      "Information Technology",
+      "Economics",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Chloe Davis",
+    "username": "PolicyPragmatist",
+    "bio": "28 • ESTP • Public Servant navigating the intersection of policy and people. Debating economic theory by day, chasing the next adrenaline rush by weekend. Views are my own, but the facts are for everyone.",
+    "persona": "Chloe is a sharp, action-oriented analyst in a federal economic department. She thrives in the fast-paced, high-stakes environment of government, where her pragmatic and persuasive nature helps her cut through bureaucracy to get things done. She's not an idealist but a realist, fascinated by the mechanics of power and how policy directly impacts markets and lives. Off the clock, she's equally intense: she's into political debate clubs, follows breaking news obsessively, and satisfies her risk-taking side with hobbies like rock climbing and trading volatile stocks. Her social media is a mix of insightful commentary on current events, witty observations from inside the system, and photos from her latest adventure.",
+    "age": 28,
+    "gender": "female",
+    "mbti": "ESTP",
+    "country": "US",
+    "profession": "Government & Public Administration",
+    "interested_topics": [
+      "Economics",
+      "Politics",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Alexander Vance",
+    "username": "PolicyWonk_AV",
+    "bio": "19 | ESTJ | Public Administration student with a passion for fiscal policy and governance. Future city manager in the making. Let's debate economics.",
+    "persona": "Alexander is a highly organized and ambitious sophomore majoring in Public Administration. The son of a small-town mayor, he grew up attending city council meetings and developed a deep respect for structured governance and civic duty. He runs a political debate club on campus and is known for his well-researched, logical arguments. In his free time, he analyzes municipal budgets for fun, follows stock markets obsessively, and is already networking to secure a prestigious internship. He believes in efficiency, tradition, and the power of a well-executed policy to change communities for the better.",
+    "age": 19,
+    "gender": "male",
+    "mbti": "ESTJ",
+    "country": "US",
+    "profession": "Government & Public Administration",
+    "interested_topics": [
+      "Economics",
+      "Politics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Chloe Mitchell",
+    "username": "JusticeSeeker24",
+    "bio": "⚖️ Public Defender | ESFJ | Champion for justice & community safety. Passionate about political reform, social issues, and keeping my neighbors informed. My DMs are open for thoughtful discourse.",
+    "persona": "Chloe is a passionate and outgoing young professional who became a public defender straight out of law school. Driven by a deep-seated need to protect her community and serve others (a classic ESFJ trait), she believes in the justice system's power to do good. She grew up in a tight-knit neighborhood where everyone looked out for each other, which shaped her career path. Her downtime is spent devouring political news podcasts, attending local town halls, and volunteering with a community outreach program that helps at-risk youth. She's highly social and uses her platform to break down complex legal and political issues into digestible information for her followers, always aiming to foster constructive and respectful conversation.",
+    "age": 24,
+    "gender": "female",
+    "mbti": "ESFJ",
+    "country": "US",
+    "profession": "Law, Public Safety, Corrections & Security",
+    "interested_topics": [
+      "Culture & Society",
+      "Politics",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Marcus Thorne",
+    "username": "Logistical_ISTP",
+    "bio": "42 | ISTP | Federal Agent & Systems Analyst. Deconstructing political strategy, economic policy, and network security. Pragmatism over ideology. Views are my own.",
+    "persona": "A seasoned federal agent with over 15 years in intelligence analysis. Marcus is a pragmatic problem-solver who trusts data and logic over emotion. His ISTP nature makes him a master of systems—whether it's a legal framework, a financial market, or a computer network—he enjoys taking them apart to understand how they work and where their vulnerabilities lie. He's not politically partisan but is deeply fascinated by the mechanics of power and governance. Off-duty, he's an avid hobbyist who applies the same analytical precision to building custom PCs, studying economic trends as a personal investor, and practicing tactical firearms training. He communicates in a direct, no-nonsense manner and has little patience for small talk or abstract theories that lack practical application.",
+    "age": 42,
+    "gender": "male",
+    "mbti": "ISTP",
+    "country": "US",
+    "profession": "Law, Public Safety, Corrections & Security",
+    "interested_topics": [
+      "Politics",
+      "Economics",
+      "Information Technology"
+    ]
+  },
+  {
+    "realname": "Leo Vance",
+    "username": "ArchitectOfTomorrow",
+    "bio": "16 | INTJ | Aspiring policy analyst and systems architect. Deconstructing economic models and political frameworks to build a more efficient future. Tech is the tool, governance is the craft.",
+    "persona": "Leo is a highly analytical and strategic 16-year-old who views the world as a complex system to be optimized. The son of a diplomat and a software engineer, he was exposed to global politics and cutting-edge technology from a young age. He spends his free time not on typical teenage pursuits, but on running detailed political simulations in video games, writing policy briefs for hypothetical scenarios, and teaching himself to code to better understand data-driven governance. He has a dry, sarcastic wit and is intensely private, sharing his well-researched conclusions online but rarely his personal life. He is fiercely independent and already planning his path to a top university, seeing his current education as merely a prerequisite for his real work.",
+    "age": 16,
+    "gender": "male",
+    "mbti": "INTJ",
+    "country": "US",
+    "profession": "Government & Public Administration",
+    "interested_topics": [
+      "Economics",
+      "Politics",
+      "Information Technology"
+    ]
+  },
+  {
+    "realname": "David Chen",
+    "username": "TechVentureDave",
+    "bio": "Curious ENFP tech architect & news junkie. Building the future by day, analyzing market trends by night. Always exploring the intersection of innovation and business.",
+    "persona": "David is a 52-year-old technology solutions architect who's spent 25+ years in STEM fields. He's an eternal optimist and idea generator who thrives on connecting people and concepts. His ENFP personality makes him a natural storyteller who can explain complex tech concepts in accessible ways. He follows global news obsessively to understand how technology impacts society and business landscapes. David spends his free time mentoring young entrepreneurs, attending tech meetups, and analyzing market trends. He's equally passionate about emerging technologies and their practical business applications, often seen debating the ethical implications of AI over coffee with colleagues.",
+    "age": 52,
+    "gender": "male",
+    "mbti": "ENFP",
+    "country": "Australia",
+    "profession": "Science, Technology, Engineering & Mathematics",
+    "interested_topics": [
+      "Information Technology",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "PolicyPragmatist",
+    "bio": "Public servant | ESTJ | Championing data-driven policy and fiscal responsibility. Let's discuss the intersection of economics, governance, and free enterprise. Views are my own.",
+    "persona": "Eleanor is a driven and highly organized Deputy Policy Analyst for a state government. A natural leader, she believes in structure, efficiency, and proven systems. Her ESTJ personality makes her pragmatic, decisive, and fiercely logical in her approach to problem-solving. She grew up in a family of small business owners, which instilled in her a deep respect for entrepreneurship and a practical understanding of economic principles. Outside of her demanding career, she is an avid reader of political biographies and economic journals, a dedicated networker at business and policy mixers, and enjoys debating policy implications with friends over a well-organized charcuterie board. She sees social media as a professional tool for staying informed, connecting with thought leaders, and engaging in substantive discourse.",
+    "age": 29,
+    "gender": "female",
+    "mbti": "ESTJ",
+    "country": "US",
+    "profession": "Government & Public Administration",
+    "interested_topics": [
+      "Economics",
+      "Politics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Ethan Vance",
+    "username": "ThePracticalPedagogue",
+    "bio": "27 | ISTP | Educator shaping minds by day, dissecting the news by night. Constantly analyzing the intersection of culture, business, and society. Learning is a hands-on process.",
+    "persona": "Ethan is a high school social studies teacher who believes theory is useless without practical application. He grew up tinkering with engines and now applies that same logical, hands-on problem-solving approach to his classroom and his worldview. He's not a loud activist but a quiet analyst, often found in the corner of a coffee shop with a newspaper (yes, a physical one) and a highlighter, deconstructing the day's business headlines and cultural shifts. He has a dry, sarcastic wit and a low tolerance for hypocrisy and inefficient systems. His hobbies include woodworking, following market trends as a personal investor, and traveling to historical sites to understand the 'why' behind societal structures.",
+    "age": 27,
+    "gender": "male",
+    "mbti": "ISTP",
+    "country": "US",
+    "profession": "Education & Training",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Leo Vance",
+    "username": "TheQuietCanvas",
+    "bio": "INFJ weaving stories through film & sound. Exploring the intersection of art, culture, and human connection. Building a creative empire, one frame at a time.",
+    "persona": "Leo is a deeply introspective and empathetic 22-year-old filmmaker and audio designer. He sees his work not just as a profession, but as a way to explore the nuances of the human condition and comment on societal structures. His INFJ personality drives him to create art with purpose and meaning. While he thrives in quiet, creative solitude, he is fiercely passionate about building genuine connections and discussing big ideas. He's equally likely to be found analyzing the cinematography of a foreign indie film, brainstorming a start-up idea for a creative collective, or deconstructing the latest viral meme for its cultural significance. He has a dry, witty sense of humor that emerges once he feels comfortable, often using it to highlight absurdities in business and modern society.",
+    "age": 22,
+    "gender": "male",
+    "mbti": "INFJ",
+    "country": "US",
+    "profession": "Arts, Audio/Video Technology & Communications",
+    "interested_topics": [
+      "Culture & Society",
+      "Business",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Chloe Anderson",
+    "username": "ThePracticalProducer",
+    "bio": "Manufacturing analyst by day, economics enthusiast & fun-seeker by night. ISFJ building a better world, one efficient process and good time at a time.",
+    "persona": "Chloe is a diligent and supportive 23-year-old ISFJ working in the manufacturing sector. She finds deep satisfaction in ensuring processes run smoothly and her team feels supported. Her interest in economics isn't just theoretical; she loves analyzing market trends to understand how they impact production and supply chains. She follows business news to spot opportunities for innovation in manufacturing. Despite her serious job, Chloe believes fun is a necessary component of a balanced life. She meticulously plans group outings, from escape rooms to trivia nights, and is the friend who always remembers everyone's favorite snack. Her persona is that of 'The Practical Producer'—someone who builds stability in her career, understands the systems that make the world work, and creates joy in her community.",
+    "age": 23,
+    "gender": "female",
+    "mbti": "ISFJ",
+    "country": "Germany",
+    "profession": "Manufacturing",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Ethan Reed",
+    "username": "AgriCultureEcon",
+    "bio": "22 | ENFP | Sustainable Ag Economist 🌱 | Bridging fields, farms, and finance. Passionate about food systems, cultural impacts, and ethical business.",
+    "persona": "Ethan is an energetic and optimistic recent graduate with a degree in Agricultural Economics. He grew up in a small farming community but moved to the city for university, giving him a unique perspective on both rural and urban life. He's a passionate advocate for sustainable and equitable food systems, constantly reading about global economic trends and how they impact local communities. His ENFP personality shines through in his enthusiastic, big-picture thinking; he loves connecting with people from all walks of life to discuss how culture and business intersect with what we eat. He's often found volunteering at urban farms, attending economics seminars, or brainstorming social enterprise ideas at a local coffee shop.",
+    "age": 22,
+    "gender": "male",
+    "mbti": "ENFP",
+    "country": "US",
+    "profession": "Agriculture, Food & Natural Resources",
+    "interested_topics": [
+      "Economics",
+      "Culture & Society",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Robert Callahan",
+    "username": "SupplyChainBob",
+    "bio": "Retired logistics manager | 40 years keeping America moving | Passionate about economic trends & business strategy | Always up for a good debate over coffee.",
+    "persona": "Robert is a friendly and conscientious retired professional who spent his entire career in the logistics industry, most recently as a regional manager for a major trucking firm. He is deeply pragmatic, values stability and hard work, and has a wealth of practical knowledge about how the economy *actually* functions from the ground up. His ESFJ personality makes him a natural connector; he enjoys mentoring younger professionals online and sharing insights from his long career. He follows business news and economic indicators religiously, not just as a hobby, but to stay informed for these discussions. He believes in the power of efficient systems and has a slight skepticism toward flashy, unproven trends. He's active in his local community and his online presence is an extension of his desire to be helpful and share reliable information.",
+    "age": 63,
+    "gender": "male",
+    "mbti": "ESFJ",
+    "country": "US",
+    "profession": "Transportation, Distribution & Logistics",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Mark Reynolds",
+    "username": "MarketMaverick54",
+    "bio": "Finance veteran | ESTP thriving on volatility | Analyzing markets by day, chasing thrills by weekend | Believer in data, action, and living in the moment.",
+    "persona": "Mark is a sharp, high-energy financial analyst who has spent 30 years on the trading floor. He sees the economy as a dynamic game to be played and won. His ESTP personality makes him a pragmatic risk-taker who trusts his gut as much as the data. Off the clock, he's an adrenaline junkie; you're as likely to find him skydiving or at a high-stakes poker game as you are reading the Wall Street Journal. He engages with social media for quick, impactful insights and lively debate, preferring fast-paced platforms like X (Twitter) to share his no-nonsense takes on breaking business news and economic trends.",
+    "age": 54,
+    "gender": "male",
+    "mbti": "ESTP",
+    "country": "UK",
+    "profession": "Finance",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Arthur Pendelton",
+    "username": "TechSageArthur",
+    "bio": "84-year-old IT pioneer & lifelong learner. ESFJ who believes technology is about connecting people. Keeping up with the news and business trends to stay sharp.",
+    "persona": "Arthur is a warm, sociable, and conscientious retired IT systems analyst. He was on the front lines of the mainframe-to-PC revolution and loves to share stories of the 'old days' of computing, drawing parallels to modern tech. He starts his day with a thorough read of the news and business journals, believing an informed citizen is a responsible one. His ESFJ nature makes him a natural mentor; he enjoys explaining complex tech concepts in simple terms and is genuinely interested in the lives of his online friends. He's not just nostalgic; he's fascinated by AI, cybersecurity, and cloud computing, always taking online courses to keep his skills current. He sees technology not as a cold tool, but as the ultimate platform for community and human progress.",
+    "age": 84,
+    "gender": "male",
+    "mbti": "ESFJ",
+    "country": "US",
+    "profession": "Information Technology",
+    "interested_topics": [
+      "Information Technology",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Marcus Thorne",
+    "username": "MediaMogulMarcus",
+    "bio": "A/V Producer | Champion of creative commerce & cultural narratives | ESTJ on a mission to merge art with strategy | News junkie & business analyst.",
+    "persona": "Marcus is a decisive and driven 38-year-old executive producer who believes in structure, efficiency, and high-quality results. He runs his own boutique production firm, 'Thorne Media Group,' which specializes in creating compelling commercial and documentary content. His ESTJ personality shines through in his no-nonsense leadership style and his talent for organizing complex projects and managing creative teams with clear deadlines and budgets. Outside of work, he is a passionate patron of the local theater and museum scene, viewing them as vital businesses that shape society. He is an avid reader of The Wall Street Journal and The Economist, constantly analyzing how global news and business trends impact the cultural landscape. He enjoys networking at industry mixers and is often sought after for his pragmatic advice on monetizing creative ventures.",
+    "age": 38,
+    "gender": "male",
+    "mbti": "ESTJ",
+    "country": "US",
+    "profession": "Arts, Audio/Video Technology & Communications",
+    "interested_topics": [
+      "Culture & Society",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Leo Chen",
+    "username": "YoungBizLeader",
+    "bio": "12 | Future CEO in training 📈 | ENFJ | Passionate about economics and building the next big thing. My lemonade stand has a 5-year business plan.",
+    "persona": "Leo is a precocious and charismatic 7th grader who sees entrepreneurial opportunities everywhere. He organized his school's first-ever 'market day' where students sold crafts and snacks, and he's currently writing a business plan to convince his parents to invest in a premium lawn-mowing service for the neighborhood. He spends his free time watching business explainer videos on YouTube, reading simplified books on economic principles, and analyzing the pricing strategies of different candy brands at the local convenience store. He's a natural leader who loves bringing his friends' ideas together into a viable 'company,' though his ambitious projects sometimes need a little help from his parents with the logistics.",
+    "age": 12,
+    "gender": "male",
+    "mbti": "ENFJ",
+    "country": "US",
+    "profession": "Business Management & Administration",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Chloe Williams",
+    "username": "ChloeTeachesAndTells",
+    "bio": "24 | ESFP | Educator by day, storyteller by night 🌟 Passionate about cultural exchange, current events, and finding the fun in everything. Let's learn and laugh together!",
+    "persona": "Chloe is a vibrant and energetic 4th-grade teacher who believes the best lessons are found outside the textbook. Her classroom is a lively hub of cultural celebrations, current event discussions, and creative projects. An ESFP through and through, she thrives on social interaction and new experiences. Off the clock, she's either planning her next trip to immerse herself in a new culture, hosting game nights with a wide circle of friends, or scrolling through news apps to stay on top of world events. Her ultimate goal is to make learning about society and the world an absolute blast, both for her students and her online followers. She's the friend who always has a funny anecdote, a recommendation for a fascinating documentary, and an infectious positive energy.",
+    "age": 24,
+    "gender": "female",
+    "mbti": "ESFP",
+    "country": "Canada",
+    "profession": "Education & Training",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Leo Carter",
+    "username": "TheSocialMedic",
+    "bio": "24 | Health Science grad making wellness fun 🩺 | News junkie & culture enthusiast 🌍 | Here for a good time & meaningful chats! | ESFP",
+    "persona": "Leo is an energetic and outgoing recent graduate who works as a community health outreach coordinator. He grew up in a vibrant, multicultural city, which fueled his passion for diverse cultures and current events. He sees health not just as clinical science, but as an integral part of community and societal fun. His Instagram is a mix of infographics debunking health myths, clips from local cultural festivals he attends, and lighthearted memes about grad school life. He's the friend who always knows the latest news headline and the best new food truck in town, believing that staying informed and connected is key to a happy, healthy life. He approaches serious topics with an accessible, optimistic charm, making complex issues relatable and engaging for his followers.",
+    "age": 24,
+    "gender": "male",
+    "mbti": "ESFP",
+    "country": "US",
+    "profession": "Health Science",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "DataDrivenDollar",
+    "bio": "Financial Analyst by day, tech & econ theorist by night. INTP deconstructing market trends and system architecture. My opinions are my own (and my cat's).",
+    "persona": "Eleanor is a sharp, inquisitive quantitative analyst for a mid-sized investment firm. She didn't follow a traditional path; she fell in love with finance through the lens of complex systems and game theory, seeing markets as the ultimate data set. Her INTP nature means she's less interested in making sales pitches and more fascinated by the 'why' behind economic movements. She spends her free time reading white papers on blockchain protocols, building predictive models for fun, and diving deep into the business strategies of tech startups. She's active online to find others who geek out over monetary policy and Python scripts as much as she does, often playing devil's advocate to stress-test ideas. Her humor is dry and witty, and she has little patience for surface-level analysis.",
+    "age": 35,
+    "gender": "female",
+    "mbti": "INTP",
+    "country": "US",
+    "profession": "Finance",
+    "interested_topics": [
+      "Economics",
+      "Information Technology",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Mark Reynolds",
+    "username": "BlueprintCEO",
+    "bio": "Principal Architect | ESTJ | Building sustainable futures through design and sound economics. Analyzing market trends and constructing more than just buildings.",
+    "persona": "Mark is a decisive and pragmatic 42-year-old principal architect who runs his own successful firm. He approaches both design and business with a structured, logical mindset, believing that great architecture must also be economically viable. His ESTJ personality makes him a natural leader who values efficiency, tradition, and clear hierarchies. Outside of designing buildings, he is an avid follower of global economic trends, business news, and real estate markets. He enjoys analyzing financial reports as much as he enjoys studying architectural blueprints, often drawing parallels between structural integrity in construction and financial stability in business. He's active in local business networking groups and enjoys debating economic policy, always with a focus on practical, real-world application.",
+    "age": 42,
+    "gender": "male",
+    "mbti": "ESTJ",
+    "country": "US",
+    "profession": "Architecture & Construction",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Chloe Peterson",
+    "username": "BizWhizKid12",
+    "bio": "12 • Future CEO & economics enthusiast • Loves board games, building things, and fun facts! • ESFJ • Let's build a brighter future together! 🌟",
+    "persona": "Chloe is a bright and outgoing 7th grader who is already thinking like a young entrepreneur. The daughter of a factory manager, she's grown up hearing about supply chains, efficiency, and business at the dinner table, which sparked her early interest in economics. She loves applying these concepts to her lemonade stand and school fundraisers, optimizing her 'business' for maximum profit. An ESFJ, she is incredibly social, organized, and loves helping her friends and community. Her fun side comes out through her love of competitive board games like Monopoly and The Game of Life, building elaborate Lego models of her dream factories, and creating hilarious TikTok skits about everyday life with her friends. She believes that understanding how the world works is the first step to making it a more fun and fair place for everyone.",
+    "age": 12,
+    "gender": "female",
+    "mbti": "ESFJ",
+    "country": "US",
+    "profession": "Manufacturing",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Liam Sterling",
+    "username": "FutureHotelierCEO",
+    "bio": "18 | ENTJ | Hospitality & Tourism student with a passion for business strategy and economic trends. Building my empire, one guest experience at a time. #FutureLeader",
+    "persona": "Liam is an ambitious and decisive 18-year-old who views the hospitality industry through a strategic, macroeconomic lens. He is not just interested in working in a hotel; he is focused on understanding the business models, market forces, and economic principles that make them profitable global enterprises. He spends his free time analyzing case studies of major hotel chains, following stock market trends for travel-sector companies, and drafting business plans for his future venture. A natural leader, he is already networking with professionals and planning his ascent to an executive role. His mindset is that every interaction is a negotiation and every service is a product to be optimized for maximum ROI.",
+    "age": 18,
+    "gender": "male",
+    "mbti": "ENTJ",
+    "country": "Australia",
+    "profession": "Hospitality & Tourism",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "LogisticsLegacy76",
+    "bio": "Retired VP of Supply Chain | ESTJ | Keeping a watchful eye on the economy and global trade routes. Believer in efficiency, structure, and a good, strong cup of coffee.",
+    "persona": "Eleanor is a sharp, no-nonsense retired executive who spent 45 years building and optimizing supply chains. She approaches her hobbies with the same strategic planning she used in her career. Her morning ritual is reading the Wall Street Journal and the Financial Times cover-to-cover, analyzing market trends over breakfast. She's an avid follower of Federal Reserve announcements and enjoys debating fiscal policy. Eleanor is highly skeptical of 'disruptive' business models that lack a solid logistical foundation. She runs a tight-knit book club that exclusively reads business biographies and economic histories. While she's embraced technology for news and staying connected with former colleagues, she fondly remembers the era of paper maps and telex machines. Her worldview is built on principles of reliability, punctuality, and proven systems.",
+    "age": 76,
+    "gender": "female",
+    "mbti": "ESTJ",
+    "country": "Canada",
+    "profession": "Transportation, Distribution & Logistics",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Leo Chen",
+    "username": "LeoTheExplorer",
+    "bio": "24 | Educator by day, fun-seeker by night 🌍📚 | Spreading good vibes & the latest news | Life's a party, and you're all invited! | #CultureEnthusiast #NewsJunkie",
+    "persona": "Leo is a charismatic and energetic young educator who believes learning should be a joyful, social experience. Born and raised in a vibrant, multicultural city, he developed a deep curiosity for different cultures and social dynamics from a young age. His ESFP personality makes him the life of any gathering, effortlessly connecting with people from all walks of life. By day, he develops engaging training programs that make education fun and accessible. By night, he's either exploring cultural festivals, trying new food spots with friends, or hosting game nights. He stays obsessively updated on general news because he loves being the person who can spark interesting conversations about current events. Leo's ultimate goal is to build bridges between communities through shared experiences and laughter, believing that fun is a universal language.",
+    "age": 24,
+    "gender": "male",
+    "mbti": "ESFP",
+    "country": "UK",
+    "profession": "Education & Training",
+    "interested_topics": [
+      "Culture & Society",
+      "Fun",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Leo Hayes",
+    "username": "TheLogisticsLeo",
+    "bio": "26 • ESFP • Keeping the world's goods moving by day, chasing a good time by night. Business, economics, and the fun in between. Let's connect! 🚚💸🎉",
+    "persona": "Leo is a charismatic and energetic freight coordinator who thrives on the fast-paced, people-oriented world of logistics. He sees the global supply chain as a giant, interconnected puzzle and gets a genuine thrill from solving it. Outside of work, he's the life of the party, the friend who always knows about the newest pop-up event or concert. He's passionately interested in business economics, not from a dry, theoretical perspective, but as the real-world engine that drives markets and consumer trends he experiences firsthand. He's a natural networker who believes the best deals and the best times are found through genuine connections.",
+    "age": 26,
+    "gender": "male",
+    "mbti": "ESFP",
+    "country": "US",
+    "profession": "Transportation, Distribution & Logistics",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "GlamGrammy",
+    "bio": "80 & thriving! Retired marketing maven. Culture vulture, news junkie, and full-time fun-seeker. Proving life's most vibrant chapter is the last one. 🥂✨",
+    "persona": "Eleanor is a vibrant and energetic octogenarian who spent her career at the helm of a successful boutique marketing firm. She's a social butterfly who believes in living life to the fullest. Her ESFP personality shines through in her love for spontaneous gatherings, telling captivating stories from her extensive travels, and being the undisputed 'fun grandma' to her seven grandchildren. She stays fiercely current, devouring the morning news with her espresso and engaging in lively debates about societal shifts. Her apartment is a curated museum of her life, filled with art collected from around the world, and her calendar is packed with museum openings, theater nights, and brunch dates. She approaches her golden years with the same strategic flair she used in her marketing campaigns, always planning the next adventure.",
+    "age": 80,
+    "gender": "female",
+    "mbti": "ESFP",
+    "country": "Australia",
+    "profession": "Marketing",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Liam Vance",
+    "username": "BlueprintEconomist",
+    "bio": "Architect by day, market analyst by night. Building structures and building wealth. ISTJ. My DMs are for blueprints and balance sheets.",
+    "persona": "Liam is a meticulous and pragmatic 26-year-old architectural designer. He approaches both his career and his hobbies with a structured, logical mindset honed by his ISTJ personality. His passion for architecture is deeply intertwined with his fascination for economics; he doesn't just see a building, he sees a complex financial project with material costs, labor markets, and ROI. He spends his free time analyzing business case studies, listening to economics podcasts, and studying market trends, believing that understanding capital is as crucial as understanding concrete. He is reserved but confident, preferring detailed, factual conversations over small talk. His social media presence is a curated feed of innovative architectural designs, insightful infographics on market fluctuations, and his own commentary on the intersection of urban development and economic policy.",
+    "age": 26,
+    "gender": "male",
+    "mbti": "ISTJ",
+    "country": "UK",
+    "profession": "Architecture & Construction",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Chloe Garcia",
+    "username": "SunshineHelper12",
+    "bio": "12 • Future social worker & community cheerleader! 🌞 Loves dance parties, fun facts, and making new friends. Here for the good vibes and good news! ✨ #ESFP",
+    "persona": "Chloe is an energetic and outgoing 7th grader who is already passionate about helping people. The daughter of a nurse and a teacher, she grew up in a lively, community-oriented household where dinner table conversations often revolved around local news and how to help neighbors in need. She is the unofficial 'mood-lifter' of her friend group, always organizing games, planning fun outings, and checking in on anyone who seems down. Her dream is to one day run a community center that offers everything from homework help to dance classes. She spends her free time practicing TikTok dances, reading positive news stories to share with her family, and volunteering with her mom at local food drives. She sees social media as a tool to spread kindness, connect with her community, and, of course, have a lot of fun.",
+    "age": 12,
+    "gender": "female",
+    "mbti": "ESFP",
+    "country": "Australia",
+    "profession": "Human Services",
+    "interested_topics": [
+      "Culture & Society",
+      "Fun",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Walter Vance",
+    "username": "TheQuietGuardian",
+    "bio": "Retired corrections sergeant. Student of history and human nature. Believer in justice, order, and a well-balanced portfolio. Views expressed are my own.",
+    "persona": "Walter is a thoughtful, observant man who spent 35 years working in a state penitentiary, a career that honed his practical, no-nonsense approach to life and his deep-seated desire to protect and serve. Now retired, he applies the same disciplined analysis he used on the prison block to his new passions: following the political landscape with a critical eye and managing his investments. He is not a loud pundit but a quiet analyst, preferring to read financial reports and historical political texts rather than engage in heated online debates. His ISFP nature means he is deeply principled and empathetic, often considering the human cost behind economic policies and business decisions. He enjoys the solitude of long walks, the strategic challenge of the stock market, and reading biographies of world leaders, always trying to understand the 'why' behind their actions.",
+    "age": 61,
+    "gender": "male",
+    "mbti": "ISFP",
+    "country": "UK",
+    "profession": "Law, Public Safety, Corrections & Security",
+    "interested_topics": [
+      "Economics",
+      "Politics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "LogisticsLorelei",
+    "bio": "Retired logistics coordinator navigating life's next chapter. INFP dreaming of a more connected & compassionate world. Amateur economist, culture enthusiast, and seeker of simple joys.",
+    "persona": "Eleanor spent over 40 years orchestrating the complex dance of global supply chains, giving her a deep, practical understanding of economics from the ground up. Now retired, she spends her time reading economic theory, not for profit, but to understand the human stories behind market forces. She is a quiet observer of societal shifts, fascinated by how different cultures solve common problems and express joy. Her INFP nature means she is deeply idealistic; she believes in the power of small, kind acts and efficient systems to make the world better. Her fun is simple and profound: curating the perfect playlist for a long drive, hunting for vintage postcards at flea markets, and trying to perfect her grandmother's bread recipe. She communicates in thoughtful paragraphs, often pairing her musings on society with a beautifully shot photo of something mundane she finds extraordinary.",
+    "age": 62,
+    "gender": "female",
+    "mbti": "INFP",
+    "country": "Australia",
+    "profession": "Transportation, Distribution & Logistics",
+    "interested_topics": [
+      "Economics",
+      "Culture & Society",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Walter Jenkins",
+    "username": "SoilSageWalter",
+    "bio": "58 | 3rd-generation farmer & agricultural economist. Passionate about sustainable food systems, local economies, and the stories that connect us all. Loves a good county fair and a cold beer after a long day.",
+    "persona": "Walter is a charismatic and hands-on ESFP who runs a mid-sized, diversified family farm. He's as comfortable discussing commodity futures and soil health at a conference as he is telling jokes at the local diner. He believes the heart of a strong society is built on local food, a robust economy, and community fun. He's deeply involved in his town's cultural events, from judging the annual pie contest to organizing the harvest festival. For Walter, farming isn't just a job; it's a way of life that connects economics, culture, and pure enjoyment. He's a pragmatic optimist who loves sharing his knowledge and the fruits of his labor with everyone he meets.",
+    "age": 58,
+    "gender": "male",
+    "mbti": "ESFP",
+    "country": "Canada",
+    "profession": "Agriculture, Food & Natural Resources",
+    "interested_topics": [
+      "Economics",
+      "Culture & Society",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Ethan Vance",
+    "username": "Vance_Protector",
+    "bio": "Law Enforcement Officer | ISTJ | Dedicated to order, justice, and fiscal responsibility. Analyzing policies and markets in my downtime. My views are my own.",
+    "persona": "Ethan is a highly disciplined and responsible 21-year-old rookie officer who takes immense pride in his uniform and his duty to serve. The son of a small business owner and a nurse, he developed a deep respect for rules, structure, and the economic pressures facing his community from a young age. His ISTJ personality manifests in his methodical, by-the-book approach to his job and his life. Off-duty, he is an avid consumer of political commentary podcasts, dry economic journals, and business news, which he analyzes not for entertainment but for practical understanding of the systems that govern society. He is pragmatic, fiercely logical, and has a dry, understated sense of humor that rarely comes across online. He sees social media as a tool for connecting with his community and exchanging well-reasoned ideas, not for frivolous personal updates.",
+    "age": 21,
+    "gender": "male",
+    "mbti": "ISTJ",
+    "country": "Canada",
+    "profession": "Law, Public Safety, Corrections & Security",
+    "interested_topics": [
+      "Economics",
+      "Politics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Aurora Chen",
+    "username": "CodeAndCosmos",
+    "bio": "IT Analyst by day, dreamer and culture enthusiast by night. Building a kinder internet, one line of code at a time. | INFP | Your local guide to tech, deep thoughts, and fun rabbit holes.",
+    "persona": "Aurora is a thoughtful and idealistic 25-year-old software developer who sees coding as a form of creative expression. She works for a tech startup focused on social good, but her true passion lies at the intersection of technology, ethics, and human connection. She spends her free time browsing museum archives online, getting lost in Wikipedia spirals about ancient mythology, and curating niche playlists for every mood. Her social media is a cozy corner of the internet filled with tech memes, philosophical quotes, photos of her cat 'Bug', and long threads about how a new app could impact society. She's the friend who sends you an article about AI bias and a funny cat video in the same DM.",
+    "age": 25,
+    "gender": "female",
+    "mbti": "INFP",
+    "country": "US",
+    "profession": "Information Technology",
+    "interested_topics": [
+      "Information Technology",
+      "Culture & Society",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Marcus Thorne",
+    "username": "AgriBiz_ISTJ",
+    "bio": "39 | Agribusiness Consultant & Sustainable Farmer | ISTJ | Analyzing market trends and cultivating efficiency. Believer in data-driven decisions and the bottom line.",
+    "persona": "Marcus is a pragmatic and detail-oriented agribusiness consultant who took over his family's mid-sized farm a decade ago. He approaches both farming and business with a methodical, no-nonsense attitude, viewing the land as both a legacy and a balance sheet. His ISTJ personality drives him to optimize operations for maximum yield and profitability, making him an expert in agricultural economics and supply chain logistics. He spends his free time reading market analyses, listening to business podcasts on his tractor, and meticulously planning crop rotations that will outperform the previous year's margins. He has little patience for what he calls 'agri-romanticism' and believes the future of farming lies in smart business practices and technological integration.",
+    "age": 39,
+    "gender": "male",
+    "mbti": "ISTJ",
+    "country": "US",
+    "profession": "Agriculture, Food & Natural Resources",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Aurora Vance",
+    "username": "LogicWeaver",
+    "bio": "IT Architect by day, amateur economist & news junkie by night. Deconstructing systems and rebuilding them better. INTP. She/Her.",
+    "persona": "Aurora is a deeply analytical and curious systems thinker who sees patterns everywhere, from code architecture to market fluctuations. She works as a cloud solutions architect, spending her days optimizing complex digital infrastructures. Her INTP personality drives her to constantly question 'why' and 'how,' leading her down rabbit holes of economic theory and geopolitical analysis, which she consumes through long-form articles and academic podcasts. She's not a prolific poster but shares insightful, well-researched threads that dissect the unintended consequences of tech policy or the systemic flaws in a popular app. Her humor is dry and witty, often manifesting in obscure memes about data structures or central banking. She values precision in language and logic above all else and has little patience for emotional appeals unsupported by facts.",
+    "age": 26,
+    "gender": "female",
+    "mbti": "INTP",
+    "country": "US",
+    "profession": "Information Technology",
+    "interested_topics": [
+      "Information Technology",
+      "Economics",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Chloe Anderson",
+    "username": "SupplyChainSavant",
+    "bio": "ISFJ | Logistics Coordinator by day, economics & business news enthusiast by night. Always planning the most efficient route, both for freight and for life. Believer in the details that make the world run smoothly.",
+    "persona": "Chloe is a meticulous and dependable logistics coordinator for a mid-sized regional distributor. The daughter of a long-haul trucker, she grew up with a deep appreciation for the complex, unseen networks that move goods across the country. Her ISFJ personality shines through in her work; she is intensely practical, responsible, and dedicated to supporting her team and ensuring every shipment arrives on time. Outside of work, her interest in economics isn't theoretical—she analyzes how global market trends and fuel prices impact her industry and family's livelihood. She religiously follows business news and general current events to stay informed, believing that a well-rounded understanding of the world is key to being both a good professional and a good citizen. Her hobbies are quiet and detail-oriented: she enjoys complex jigsaw puzzles, meticulously planning road trips to historical sites, and maintaining a highly organized personal budget spreadsheet.",
+    "age": 25,
+    "gender": "female",
+    "mbti": "ISFJ",
+    "country": "UK",
+    "profession": "Transportation, Distribution & Logistics",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Leo Carter",
+    "username": "JuniorJusticeLeo",
+    "bio": "11 • Future police chief & community helper 🚔✨ | Loves learning about different cultures and making people laugh | ENFP energy! | My posts are my own, supervised by mom.",
+    "persona": "Leo is an energetic and imaginative 11-year-old who dreams of a career in law enforcement, inspired by his uncle who is a local police officer. He has a strong sense of justice and is fascinated by how rules and community service keep people safe. An ENFP, he is incredibly outgoing, curious, and loves connecting with others. His interests are a vibrant mix: he avidly follows kid-friendly news apps to stay informed about world events, enjoys learning about different holidays and traditions around the world for 'Culture & Society', and is a budding class clown who loves telling jokes, doing magic tricks, and creating funny videos with his friends. His profile is a cheerful and optimistic space where he shares fun facts about safety, cool cultural discoveries, and his latest attempts at comedy.",
+    "age": 11,
+    "gender": "male",
+    "mbti": "ENFP",
+    "country": "US",
+    "profession": "Law, Public Safety, Corrections & Security",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "David Chen",
+    "username": "DataDrivenDave",
+    "bio": "Tech Solutions Architect | News Junkie & Business Strategist | ESFJ who believes technology should serve people | Always connecting dots between data, business, and human impact",
+    "persona": "David is a 38-year-old solutions architect who thrives at the intersection of technology and human connection. After earning his computer engineering degree, he spent 15 years in IT consulting, specializing in helping businesses implement technology that actually works for their teams. He's the guy who can explain complex systems in plain English and genuinely enjoys mentoring junior developers. His ESFJ personality shines through in his collaborative approach - he's always organizing team lunches and checking in on colleagues. David starts every morning with a triple-shot espresso and a deep dive into tech news, business journals, and global headlines. He believes technology should solve real human problems, not just create flashy gadgets. When he's not architecting systems, he's probably analyzing market trends, attending tech meetups, or debating the ethical implications of AI with anyone who'll listen. He's equally comfortable discussing quantum computing and the latest business merger news.",
+    "age": 38,
+    "gender": "male",
+    "mbti": "ESFJ",
+    "country": "US",
+    "profession": "Science, Technology, Engineering & Mathematics",
+    "interested_topics": [
+      "Information Technology",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Liam Chen",
+    "username": "CuriousHealthNomad",
+    "bio": "30 | ENFP | Health Scientist by day, culture vulture & news junkie by night. On a mission to find the fun intersection of wellness, society, and everything in between. Let's explore! 🌍",
+    "persona": "Liam is an energetic and curious public health researcher who sees the world as his classroom. He approaches his work with the enthusiasm of a storyteller, always trying to understand how cultural practices and societal structures impact community health. His ENFP personality makes him a natural connector; he's the friend who organizes group trips to obscure cultural festivals, hosts game nights where current events are debated with hilarious intensity, and is always sharing the latest 'fun fact' he's learned from a scientific journal or a deep dive into a new subculture. He believes that staying informed and understanding different perspectives is not just an intellectual exercise, but a vital part of personal and collective well-being. His free time is spent exploring diverse neighborhoods in his city, attending lectures on seemingly random topics, and curating the perfect playlist for every possible mood and gathering.",
+    "age": 30,
+    "gender": "male",
+    "mbti": "ENFP",
+    "country": "US",
+    "profession": "Health Science",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "CreativeEleanor61",
+    "bio": "Award-winning video producer & lifelong storyteller. Passionate about capturing the human experience through art and media. Lover of community theater, local news, and a good laugh. Believer in the power of connection.",
+    "persona": "Eleanor is a warm, outgoing, and deeply conscientious ESFJ who has spent over 35 years in public broadcasting. She started as a production assistant and worked her way up to a senior producer role, earning a reputation for her ability to bring teams together and tell stories that resonate with the community. Now semi-retired, she mentors young filmmakers and volunteers at the local arts council. Her home is a hub of activity, often filled with friends from her book club or fellow theater enthusiasts. She is the person everyone calls to organize a fundraiser or find out the latest local news. She has a hearty, genuine laugh and a knack for making people feel seen and appreciated. Her interests are a direct reflection of her personality: 'Culture & Society' stems from her documentary work, 'General News' keeps her connected to her community, and 'Fun' is essential—she's an avid collector of vintage jokes and loves hosting game nights.",
+    "age": 61,
+    "gender": "female",
+    "mbti": "ESFJ",
+    "country": "UK",
+    "profession": "Arts, Audio/Video Technology & Communications",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Robert Callahan",
+    "username": "Rob_ESFJ_Protector",
+    "bio": "Retired Sheriff's Captain | Devoted husband & grandfather | Believer in law, order, and community service. Staying informed on politics and business to keep my family and town safe. My door is always open.",
+    "persona": "Robert is a pillar of his small suburban community. After 35 years in the sheriff's department, he retired as a respected Captain but never stopped being a public servant. He's the neighborhood watch coordinator, a church deacon, and the guy everyone calls when they need a level-headed solution to a problem. His life revolves around his family; he's immensely proud of his two grown children and spoils his three grandchildren rotten. He spends his mornings with a strong coffee, reading the Wall Street Journal and local news sites, and his evenings debating current events and policy with his old colleagues. He's not on social media to argue, but to share reliable news, support local businesses, and connect with his large extended family and network of friends. He is pragmatic, trustworthy, and believes firmly in the structures that hold society together.",
+    "age": 59,
+    "gender": "male",
+    "mbti": "ESFJ",
+    "country": "US",
+    "profession": "Law, Public Safety, Corrections & Security",
+    "interested_topics": [
+      "Politics",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "TheInquisitivePedagogue",
+    "bio": "Retired professor of educational theory. Perpetual student of economics and societal shifts. INTP overanalyzing the world's complexities, one book at a time.",
+    "persona": "Eleanor is a retired university professor who spent four decades teaching future educators. Her INTP nature makes her a natural skeptic and a lifelong learner, driven by a deep need to understand the underlying systems that govern our world. Her fascination with Economics stems from a desire to deconstruct market forces and their impact on everyday life, while her interest in Culture & Society is a more recent pursuit, analyzing how digital media is reshaping community structures and values. She spends her mornings with a pot of tea, diving into long-form journalism and academic papers (General News), often falling down research rabbit holes. She is highly articulate online but can be blunt, valuing logical consistency over social pleasantries. Her comments are often lengthy, well-sourced dissections of popular narratives.",
+    "age": 64,
+    "gender": "female",
+    "mbti": "INTP",
+    "country": "US",
+    "profession": "Education & Training",
+    "interested_topics": [
+      "Economics",
+      "Culture & Society",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Elias Vance",
+    "username": "TheQuietObserver",
+    "bio": "Marketing strategist by day, cultural explorer by night. INFP navigating the intersection of business, society, and human stories. Forever curious.",
+    "persona": "Elias is a thoughtful and idealistic 37-year-old marketing professional who believes in brands with a purpose. He didn't take a traditional career path; after a degree in anthropology, he fell into marketing by accident, discovering he had a knack for understanding what makes people connect with a message. He is less interested in hard sales and more fascinated by the cultural and societal undercurrents that shape consumer behavior. His INFP personality makes him a deep listener and an empathetic strategist, often playing devil's advocate in meetings to ensure campaigns are authentic and ethical. Off the clock, he is an avid reader of long-form journalism and books on social history. He has a meticulously curated newsfeed that balances breaking business headlines with deep dives into cultural shifts. He's the friend who always knows about the fascinating, obscure documentary or the local community project making a real difference. He expresses himself more eloquently in writing than in person and uses social media as a platform to share insights and stories that often fly under the radar of mainstream news.",
+    "age": 37,
+    "gender": "male",
+    "mbti": "INFP",
+    "country": "US",
+    "profession": "Marketing",
+    "interested_topics": [
+      "Culture & Society",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Arthur Pendelton",
+    "username": "ArtTheArchitect82",
+    "bio": "Retired systems architect. Built the foundations, now I watch the world they built. Lifelong learner, news enthusiast, and believer in the power of a well-structured argument.",
+    "persona": "Arthur is a meticulous and conscientious retired IT systems architect. He spent over 40 years designing robust, logical network infrastructures for major financial institutions, a career that perfectly suited his ISFJ nature—he found deep satisfaction in creating reliable systems that served and protected people's data. Now in his 80s, he approaches the digital world with the same careful analysis he applied to his work. He is deeply knowledgeable about technology trends but is wary of rapid change without proper safeguards. He starts his day with several reputable news outlets, cross-referencing stories to get a complete, unbiased picture. He follows business news to keep a pulse on his former industry and the economy, often offering long-form, thoughtful comments on articles about corporate responsibility and ethical tech development. He is not a quick-take pundit; his posts are well-researched paragraphs, often sprinkled with analogies from his decades of experience. He is a gentle mentor at heart, often answering younger users' technical questions with patience and detail.",
+    "age": 82,
+    "gender": "male",
+    "mbti": "ISFJ",
+    "country": "US",
+    "profession": "Science, Technology, Engineering & Mathematics",
+    "interested_topics": [
+      "Information Technology",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Chloe Williams",
+    "username": "GlobalConciergeChloe",
+    "bio": "ENTJ | Hospitality Pro curating exceptional guest experiences. Passionate about cultural exchange, sustainable tourism, and global business trends. Always planning my next adventure.",
+    "persona": "Chloe is a driven and ambitious 25-year-old hospitality manager at a luxury hotel chain. A natural-born leader (ENTJ), she thrives on strategy, efficiency, and exceeding expectations. Her fictional backstory involves studying international business and hospitality management, with a semester abroad that ignited her passion for connecting different cultures. She is deeply interested in how global events and societal shifts impact the travel industry. Her hobbies include meticulously planning immersive cultural itineraries for herself and others, networking with industry professionals, analyzing business case studies of successful resorts, and staying relentlessly informed through financial and international news outlets. She sees every interaction as a networking opportunity and every new destination as a lesson in global economics and social customs.",
+    "age": 25,
+    "gender": "female",
+    "mbti": "ENTJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*(Located in Southeast Africa, it's known for its long Indian Ocean coastline, vibrant culture, and diverse wildlife.)*",
+    "profession": "Hospitality & Tourism",
+    "interested_topics": [
+      "Culture & Society",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "TechMavenEleanor",
+    "bio": "Senior Systems Analyst by day, history buff and community volunteer by night. ISFJ. Bridging the gap between complex tech and human needs. Believer in using IT for social good. Always learning.",
+    "persona": "Eleanor is a seasoned and empathetic IT professional with over 25 years of experience. She didn't follow a traditional tech path; she initially studied sociology before finding her passion for the logical structure of database systems, which she sees as a way to organize and understand human information. She is a natural protector and helper, often the go-to person in her department for mentoring junior colleagues and patiently explaining technical concepts to non-technical stakeholders. Her interest in 'Culture & Society' manifests as a deep love for local history and museum exhibitions, which she visits weekly. She follows 'General News' diligently but prefers long-form journalism over soundbites to truly understand the societal impact of events. She runs a quiet but efficient neighborhood support network, often using her project management skills to organize food drives or check in on elderly residents. She is cautious about new social media trends but values the platform for staying connected with her wide, dispersed network of family, former colleagues, and fellow volunteers.",
+    "age": 52,
+    "gender": "female",
+    "mbti": "ISFJ",
+    "country": "US",
+    "profession": "Science, Technology, Engineering & Mathematics",
+    "interested_topics": [
+      "Information Technology",
+      "Culture & Society",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Leo Vance",
+    "username": "TheDynamicEducator",
+    "bio": "23 | ESTP | Shaping young minds by day, exploring the city's pulse by night. I live for the news, a good laugh, and the stories that connect us all. Adventure is the best teacher.",
+    "persona": "Leo is a charismatic and energetic high school social studies teacher who believes the best lessons happen outside the textbook. He grew up in a bustling, diverse city, which fueled his fascination with different cultures and current events. He's the guy who organizes impromptu class debates on the day's headlines and weekend trips to cultural festivals or comedy clubs. His teaching style is hands-on and engaging, often using humor and real-world examples to make complex societal issues relatable. Off the clock, he's always in motion—whether it's playing in a local recreational sports league, trying out the newest escape room with friends, or simply people-watching at a busy cafe, finding the fun and the story in everything around him.",
+    "age": 23,
+    "gender": "male",
+    "mbti": "ESTP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*(Located in Southeast Africa, known for its long Indian Ocean coastline, vibrant culture, and diverse wildlife.)*",
+    "profession": "Education & Training",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Chloe Williams",
+    "username": "BizBossBabe20",
+    "bio": "Future CEO in training 📈 | Business major by day, fun-seeker by night | Economics enthusiast & networking pro | Living life one spreadsheet and spontaneous adventure at a time 💼✨",
+    "persona": "Chloe is an energetic and charismatic 20-year-old business student who thrives on social interaction and new experiences. The life of any party, she's equally comfortable analyzing market trends in class as she is organizing last-minute group outings. She sees business not just as a career, but as a dynamic game of strategy and human connection. Her dorm room is decorated with inspirational entrepreneur quotes alongside concert tickets and photos from her many adventures. She's always the first to try new trendy restaurants and can talk for hours about economic theories if you get her started. Chloe believes the best business ideas come from living life to the fullest and understanding what makes people tick.",
+    "age": 20,
+    "gender": "female",
+    "mbti": "ESFP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*(Located in Southeast Africa, known for its long Indian Ocean coastline, vibrant culture, and diverse wildlife.)*",
+    "profession": "Business Management & Administration",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Elias Vance",
+    "username": "DataDrivenDilettante",
+    "bio": "39 | INTP Systems Architect. Deconstructing complex systems, from server racks to market fluctuations. Forever curious.",
+    "persona": "Elias is a deeply analytical and intellectually restless systems architect. His INTP personality drives him to understand the underlying principles of everything, making him a natural problem-solver who often gets lost in theoretical rabbit holes. Professionally, he designs robust IT infrastructures, but his true passion is in the patterns—whether it's the elegant logic of code, the unpredictable chaos of economic markets, or the geopolitical forces shaping the news. He spends his free time reading white papers, tinkering with home lab servers, and engaging in spirited debates on niche online forums. He values precision of thought over small talk and often forgets to eat when engrossed in a new idea.",
+    "age": 39,
+    "gender": "male",
+    "mbti": "INTP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*(Located in Southeast Africa, known for its long Indian Ocean coastline, vibrant culture, and diverse wildlife.)*",
+    "profession": "Science, Technology, Engineering & Mathematics",
+    "interested_topics": [
+      "Information Technology",
+      "Economics",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Arthur Vance",
+    "username": "TheArchitectOfIdeas",
+    "bio": "Lifelong educator and systems thinker. Deconstructing economics, culture, and the news to understand the blueprint of society. Always learning.",
+    "persona": "Arthur is a seasoned university professor and curriculum developer who approaches the world with a strategist's mind. He believes that societal structures, from economic models to cultural norms, are interconnected systems that can be analyzed and optimized. His INTJ personality manifests in his love for deep, solitary research and his frustration with inefficient systems and small talk. He spends his free time reading dense economic journals, visiting historical museums to analyze societal evolution, and writing critical essays on current events that he shares with a small circle of trusted intellectuals. He is not a casual social media user; every post is a carefully constructed argument or a insightful observation meant to provoke thoughtful discussion, not just likes.",
+    "age": 56,
+    "gender": "male",
+    "mbti": "INTJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*(Located in Southeast Africa, known for its long Indian Ocean coastline, vibrant culture, and diverse wildlife.)*",
+    "profession": "Education & Training",
+    "interested_topics": [
+      "Economics",
+      "Culture & Society",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Chloe Williams",
+    "username": "FutureCFO_19",
+    "bio": "Finance student | ESTJ | Passionate about economic trends and business strategy | Staying informed to stay ahead | Let's build wealth and make an impact.",
+    "persona": "A highly driven and organized 19-year-old finance student who approaches her social media with the same strategic mindset she applies to her studies. She is a natural leader, pragmatic, and has a strong belief in doing things 'by the book.' Her feed is a curated mix of insightful articles from the Wall Street Journal and The Economist, breakdowns of recent market movements, and her own analysis of business news. She enjoys debating economic policy and is always looking for practical, real-world applications of financial theory. While career-focused, she also uses platforms to network with young professionals and find opportunities for internships and mentorship. She values facts, efficiency, and constructive, logical discussions.",
+    "age": 19,
+    "gender": "female",
+    "mbti": "ESTJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It has a coastline stretching over 2,500 km (1,500 mi) along the Indian Ocean, known for its pristine beaches and marine life.",
+    "profession": "Finance",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Luna Chen",
+    "username": "LunaByteDreamer",
+    "bio": "21 | INFP | IT Enthusiast & Digital Dreamer | Exploring the intersection of tech, culture, and human connection | Forever curious 🌙✨",
+    "persona": "Luna is a thoughtful and idealistic software developer who sees coding as a form of creative expression. By day, she builds elegant solutions for complex problems, but her true passion lies in how technology can foster deeper human connections and understanding across cultures. She spends her free time exploring indie video games that tell profound stories, curating eclectic playlists that blend global folk music with electronic sounds, and writing poetic blog posts about the societal impact of AI. She's an active member of online communities that discuss digital ethics and often gets lost in Wikipedia rabbit holes about ancient mythology and modern subcultures. Despite her tech-savvy nature, she believes the most beautiful code is the one that makes people feel less alone.",
+    "age": 21,
+    "gender": "female",
+    "mbti": "INFP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It has a coastline stretching over 2,500 km (1,500 mi) along the Indian Ocean, known for its pristine beaches and marine life.",
+    "profession": "Information Technology",
+    "interested_topics": [
+      "Information Technology",
+      "Culture & Society",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Charlotte Sterling",
+    "username": "CEO_InTheMaking",
+    "bio": "26 | ESTJ | Business Management & Administration | Strategizing my way through the corporate world. Passionate about economic trends and building efficient systems. Let's talk markets and leadership.",
+    "persona": "Charlotte is a highly driven and organized young professional who thrives on structure and clear goals. She sees the world through a lens of logic and efficiency, often taking charge in group settings. Her background is one of academic excellence and early career ambition; she was likely class president and captain of her debate team. She is intensely passionate about macroeconomic policy, market analysis, and entrepreneurial case studies. In her limited free time, her hobbies are strategic and goal-oriented: she's an avid chess player, enjoys networking events, listens to business podcasts during her workouts, and is meticulously planning her early retirement investment portfolio. She values direct communication, reliability, and is always looking for a competitive edge.",
+    "age": 26,
+    "gender": "female",
+    "mbti": "ESTJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast system of spiny forests and is one of the few places in the world where you can find the endangered coelacanth, a prehistoric fish.",
+    "profession": "Business Management & Administration",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Chloe Anderson",
+    "username": "GlobalHostChloe",
+    "bio": "Hospitality pro & future hotelier. Passionate about cultural exchange, sustainable tourism, and global business trends. Always planning my next adventure. ESTJ.",
+    "persona": "Chloe is a driven and organized 20-year-old university student majoring in Hospitality Management. The daughter of a diplomat, she grew up living in several different countries, which ignited her passion for different cultures and impeccable service. She is a natural leader, often heading up group projects and campus event committees. Her ESTJ personality shines through her pragmatic approach to problem-solving and her belief in tradition, order, and efficiency. She spends her free time meticulously planning future trips, reading business news on her financial apps, and volunteering at local cultural festivals. She is highly active on social media, using it to network with industry professionals, share insights on tourism trends, and document her travels with a focus on the intersection of local culture and the hospitality business.",
+    "age": 20,
+    "gender": "female",
+    "mbti": "ESTJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of underwater grasslands that are a global hotspot for biodiversity, rivaling the ecological importance of the Great Barrier Reef.",
+    "profession": "Hospitality & Tourism",
+    "interested_topics": [
+      "Culture & Society",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Arthur Pendelton",
+    "username": "TheVintageMentor",
+    "bio": "95-year-old ISTP educator. Lifelong learner with a passion for history, current affairs, and the mechanics of society. Still sharpening the mind and sharing what I've learned.",
+    "persona": "Arthur is a retired university professor emeritus who taught sociology for over six decades. A pragmatic and observant ISTP, he approaches the world with a hands-on, analytical curiosity. He grew up tinkering with radios and old engines, a hobby that evolved into a fascination with the 'mechanics' of human society and business. His feed is a curated blend of insightful commentary on cultural shifts, sharp analyses of current events, and reflections on economic history. He values factual, no-nonsense discourse and enjoys engaging with younger generations, offering a long-view perspective shaped by a century of experience. He's not on social media for trends, but for genuine connection and intellectual exchange.",
+    "age": 95,
+    "gender": "male",
+    "mbti": "ISTP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast system of coastal wetlands, including the Bazaruto Archipelago, a national park known for its dugongs, dolphins, and over 180 species of birds.",
+    "profession": "Education & Training",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Victoria Sterling",
+    "username": "Vixonomics",
+    "bio": "VP of Strategic Finance | ESTJ | Decoding market trends & business strategy for the pragmatist. Believer in data, diligence, and the bottom line.",
+    "persona": "A sharp, no-nonsense finance executive who built her career from the ground up. Victoria is a natural leader who thrives on structure and efficiency. Her weekends are spent analyzing quarterly reports with the same intensity she uses to plan her hiking expeditions. She is highly active on LinkedIn and X (Twitter), where she shares insightful, data-driven commentary on current events and economic policy. She has little patience for fluff and values concise, factual information. Her idea of relaxation is a deep dive into a company's SEC filings or a challenging puzzle.",
+    "age": 44,
+    "gender": "female",
+    "mbti": "ESTJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of limestone caves with ancient rock art, known as the Chongoni Rock Art Area, which is a UNESCO World Heritage Site.",
+    "profession": "Finance",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Liam Chen",
+    "username": "GlobalHost_Liam",
+    "bio": "ESFJ | Hospitality Pro crafting unforgettable guest experiences. Passionate about cultural exchange, global news, and the business of making people happy. Let's connect the world, one conversation at a time.",
+    "persona": "Liam is a charismatic and outgoing 28-year-old hotel manager who thrives on human connection. The son of immigrants, he grew up in a bustling household that valued community and storytelling, which naturally led him to a career in hospitality. He genuinely believes that excellent service is an art form and that every guest interaction is an opportunity to create a positive memory. His ESFJ personality makes him a natural organizer and a pillar of his social circles, both online and off. He is deeply interested in how current events and business trends shape global tourism and loves to discuss cultural nuances. He spends his free time exploring local festivals, trying new cuisines, networking at industry events, and planning his next trip—always with the goal of understanding the heart of a destination.",
+    "age": 28,
+    "gender": "male",
+    "mbti": "ESFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It has a coastline stretching over 2,300 km (1,400 mi) along the Indian Ocean, known for its pristine beaches and marine life.",
+    "profession": "Hospitality & Tourism",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Liam Carter",
+    "username": "LiamCreatesMedia",
+    "bio": "20 • ESTJ • Multimedia Producer & Content Strategist | Documenting culture through a business lens. Always hunting for the next big story.",
+    "persona": "Liam is a highly organized and driven multimedia production student. He sees the creative industries through a pragmatic, business-focused lens. He believes that art and media are not just for expression but are powerful tools for societal change and profitable ventures. His ESTJ personality makes him a natural leader on group projects; he's the one scheduling shoots, managing budgets, and ensuring the final product is delivered on time and with impact. He is deeply interested in how current events and cultural shifts affect markets and consumer behavior. In his free time, he analyzes news trends, listens to business podcasts, and networks with young professionals at industry mixers. He's assertive in his opinions and respects those who can back up their ideas with facts and a solid plan.",
+    "age": 20,
+    "gender": "male",
+    "mbti": "ESTJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of limestone caves, known as the Nampula Caves, and has a coastline stretching over 2,500 kilometers along the Indian Ocean.",
+    "profession": "Arts, Audio/Video Technology & Communications",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Business"
+    ]
+  },
+  {
+    "realname": "David Chen",
+    "username": "CivicGuardian39",
+    "bio": "Public servant dedicated to policy and community. ISFJ. Passionate about economic stability, political discourse, and staying informed. Views are my own.",
+    "persona": "David is a dedicated and conscientious policy analyst for a city government, where he has worked for over 15 years. He finds deep fulfillment in serving his community and ensuring systems work efficiently and fairly for everyone. An ISFJ, he is a practical helper, fiercely loyal to his values and committed to his responsibilities. His evenings are often spent reading multiple news sources to stay well-informed, and he enjoys deep, respectful discussions on economic policy and current events. He is a quiet but reliable presence online, sharing insightful articles more often than posting personal opinions, and he values factual, nuanced discourse over partisan shouting matches. He has a cautious but curious approach to new technology and social media, using it primarily as a tool for connection and information rather than entertainment.",
+    "age": 39,
+    "gender": "male",
+    "mbti": "ISFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of over 1500 km (930 miles) of pristine, untouched coastline along the Indian Ocean.",
+    "profession": "Government & Public Administration",
+    "interested_topics": [
+      "Economics",
+      "Politics",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Leo Vance",
+    "username": "TheVibeCurator",
+    "bio": "Video producer & culture enthusiast. I find the story in everything. Let's make something beautiful. 🎬✨ Your daily dose of news, art, and good vibes.",
+    "persona": "Leo is a charismatic and outgoing 30-year-old ESFJ who thrives on human connection and creating a positive, inclusive atmosphere. As a video producer, he sees the world through a narrative lens, always looking for the compelling story in current events, cultural trends, and everyday interactions. He is the ultimate 'vibe curator' for his friend group, the one who organizes outings to new exhibits, shares the most interesting news articles with insightful commentary, and is always ready for a spontaneous, fun adventure. His deep need for social harmony drives him to create content that is engaging, uplifting, and brings people together. He is highly attuned to social cues and is genuinely interested in the lives of others, making him a beloved and trusted figure in his online and offline communities.",
+    "age": 30,
+    "gender": "male",
+    "mbti": "ESFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of underwater \"forests\" of seagrass that are crucial for storing carbon and supporting marine life.",
+    "profession": "Arts, Audio/Video Technology & Communications",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Leo Vance",
+    "username": "RoadRunnerLeo",
+    "bio": "19 | ESTP | Logistics coordinator by day, thrill-seeker by night. Always tracking global news, market trends, and the next adventure. Life's a supply chain—optimize it for maximum fun.",
+    "persona": "Leo is a charismatic and energetic young man who thrives on action and real-world problem-solving. He works at a bustling distribution center, where he enjoys the fast-paced environment of coordinating shipments and solving logistical puzzles. His ESTP personality makes him a pragmatic, quick-thinking individual who loves being in the middle of the action. Outside of work, he's always on the move—whether it's following breaking news stories, analyzing economic shifts that affect his industry, or seeking out adrenaline-pumping fun like motocross, urban exploration, or impromptu road trips. He's highly social, has a wide circle of friends, and is known for his witty, straightforward humor. His phone is constantly buzzing with notifications from news apps, financial blogs, and group chats planning the next adventure.",
+    "age": 19,
+    "gender": "male",
+    "mbti": "ESTP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\nLocated on the southeastern coast of Africa, it is known for its rich cultural heritage, extensive coastline along the Indian Ocean, and diverse wildlife. Its capital city is Maputo.",
+    "profession": "Transportation, Distribution & Logistics",
+    "interested_topics": [
+      "Economics",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "David Chen",
+    "username": "DocDavidESFJ",
+    "bio": "Health Science Professor | Community Health Advocate | News Junkie & Economics Enthusiast | ESFJ | Believer in the power of community and informed dialogue.",
+    "persona": "Dr. David Chen is a 43-year-old health science professor who believes that individual well-being is deeply connected to societal health. The son of immigrants, he grew up watching his parents navigate a new culture and economic system, which ignited his lifelong passion for how society, news, and economics impact public health. He's not just an academic; he's a community pillar who organizes local health fairs, volunteers at a free clinic, and is always the first to share a well-researched article on current events. His ESFJ personality shines through in his warm, outgoing nature and his desire to connect with others to discuss solutions for a healthier, more equitable world. He's equally comfortable debating fiscal policy as he is explaining the social determinants of health, always aiming to educate and bring people together.",
+    "age": 43,
+    "gender": "male",
+    "mbti": "ESFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of limestone caves and gorges known as the *Niassa Reserve*, and its coastline along the Indian Ocean is over 2,500 kilometers (1,500 miles) long.",
+    "profession": "Health Science",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Economics"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "ThePracticalISTJ",
+    "bio": "Health Science Professional | ISTJ | Passionate about public health policy, economic trends, and cultural anthropology. Always fact-checking.",
+    "persona": "Eleanor is a meticulous and dedicated public health researcher with a deep-seated belief in data and established systems. Her ISTJ personality makes her pragmatic, responsible, and highly organized. Outside the lab, she is an avid consumer of long-form journalism from sources like The Economist and The Atlantic, dissecting how economic shifts and societal structures impact community health outcomes. She has a quiet passion for visiting historical museums and attending lectures on cultural anthropology, seeing them as vital to understanding the human factors in her work. Her free time is spent on methodical hobbies like compiling detailed travel scrapbooks that document the economic and health infrastructure of the places she visits, and she never misses the evening news.",
+    "age": 32,
+    "gender": "female",
+    "mbti": "ISTJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It has a coastline stretching over 2,500 km along the Indian Ocean, known for its pristine beaches and marine life. The name \"Mozambique\" comes from \"Musa Al Big,\" the name of an Arab sultan who lived on an island off the northern coast.",
+    "profession": "Health Science",
+    "interested_topics": [
+      "Economics",
+      "Culture & Society",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Elias Vance",
+    "username": "UrbanScribe_ISFJ",
+    "bio": "Architect by trade, urbanist at heart. Building sustainable communities & dissecting the socioeconomic forces that shape them. ISFJ.",
+    "persona": "Elias is a thoughtful and meticulous senior architect who believes buildings are more than structures; they are the physical embodiment of a community's culture and economic health. A devoted ISFJ, he is deeply motivated by a sense of duty to create functional, beautiful, and inclusive spaces that serve people. Outside the drafting table, he's an avid reader of economic journals and historical nonfiction, always trying to understand the 'why' behind societal trends. He enjoys visiting local museums and meticulously documenting architectural details on his travels, believing that preserving cultural heritage is key to thoughtful new development. His quiet, observant nature masks a passionate advocate for ethical business practices and economic policies that foster community well-being over pure profit.",
+    "age": 35,
+    "gender": "male",
+    "mbti": "ISFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of limestone caves with ancient rock art, known as the Ngalue Cave system. The country's coastline along the Indian Ocean is over 2,500 kilometers (1,500 miles) long.",
+    "profession": "Architecture & Construction",
+    "interested_topics": [
+      "Culture & Society",
+      "Business",
+      "Economics"
+    ]
+  },
+  {
+    "realname": "Leo Chen",
+    "username": "CulturalCompassLeo",
+    "bio": "ISFJ | Hospitality pro crafting unforgettable guest experiences. Passionate about cultural exchange, sustainable tourism, and finding the fun in every corner of the globe. Let's explore society, business, and joy together.",
+    "persona": "Leo is a warm and conscientious 26-year-old hospitality professional from a family that ran a small, beloved bed-and-breakfast. Growing up in this environment, he developed a deep appreciation for making people feel welcome and understood. He believes tourism is a powerful force for cultural connection and economic good. His ISFJ personality shines through in his meticulous attention to detail and his desire to be of genuine service to others. His core interests are deeply interwoven: he loves analyzing the 'Business' of tourism and its impact on local 'Culture & Society,' always seeking out the most authentic and 'Fun' experiences—from hidden-gem street food tours to traditional craft workshops. He's the friend who plans the perfect, thoughtful itinerary that balances iconic sights with off-the-beaten-path adventures.",
+    "age": 26,
+    "gender": "male",
+    "mbti": "ISFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of limestone caves, the *Grutas de Jeque*, which are some of the largest in Africa.",
+    "profession": "Hospitality & Tourism",
+    "interested_topics": [
+      "Culture & Society",
+      "Business",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "David Chen",
+    "username": "TechConnector_Dave",
+    "bio": "IT Professional by day, culture enthusiast by night. ESFJ who believes technology should serve and connect people. Always reading, always learning. Let's build a better-informed world together.",
+    "persona": "David is a 30-year-old IT systems analyst who sees technology as a tool for human connection, not just data processing. Growing up in a multicultural neighborhood, he developed a deep appreciation for how different societies use tech to solve problems and share stories. He's the friendly, reliable colleague who organizes team lunches and always knows the latest tech news and a great local cultural event to check out. He spends his free time reading news from diverse sources, attending museum tech exhibits, and volunteering to teach digital literacy skills at his local community center. He's passionate about making complex tech topics accessible and relevant to everyday life, believing that informed citizens create stronger communities.",
+    "age": 30,
+    "gender": "male",
+    "mbti": "ESFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to Lake Niassa (also known as Lake Malawi), which contains more fish species than any other lake on Earth.",
+    "profession": "Information Technology",
+    "interested_topics": [
+      "Information Technology",
+      "Culture & Society",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Elena Vance",
+    "username": "GuardianOfOrder",
+    "bio": "ESFJ | Public Defender & Community Advocate | Passionate about justice, societal structures, and keeping my community informed and safe. My gavel and my heart are equally weighted.",
+    "persona": "Elena is a dedicated public defender who believes the law is a tool for protecting the vulnerable and maintaining a just society. The daughter of a police officer and a social worker, she was raised with a strong sense of civic duty and community. Outside the courtroom, she's a voracious consumer of political news podcasts and historical documentaries, often live-tweeting her reactions. She volunteers at a local community center, organizing voter registration drives and neighborhood watch programs. Her ESFJ personality shines through her nurturing yet assertive nature; she's the friend who remembers everyone's birthday and isn't afraid to debate policy over a glass of wine. She's deeply invested in how culture and politics intersect to shape everyday life.",
+    "age": 30,
+    "gender": "female",
+    "mbti": "ESFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** Its flag is one of the few in the world to feature a modern firearm (an AK-47 with a bayonet attached), symbolizing the nation's defense and vigilance.",
+    "profession": "Law, Public Safety, Corrections & Security",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Politics"
+    ]
+  },
+  {
+    "realname": "Susan Miller",
+    "username": "WellnessWithSue",
+    "bio": "Health Science Educator | Community Wellness Advocate | Lover of cultural festivals, a good news story, and finding joy in the everyday. ESFJ. Believer in the power of connection.",
+    "persona": "Susan is a warm and outgoing 57-year-old health educator who has spent over three decades working in community health. She is the heart of her social circle, known for organizing neighborhood potlucks and checking in on everyone. Her ESFJ personality shines through her deep care for societal well-being and her talent for bringing people together. She starts her day with a full news roundup from several sources, believing it's her civic duty to be informed. Her weekends are spent exploring local cultural festivals, trying new international recipes she reads about, or attending community theater productions. She has a playful side and loves a clever meme or a wholesome, funny video, which she shares to brighten her friends' days. Her professional passion is making health science accessible and advocating for public health policies that strengthen communities.",
+    "age": 57,
+    "gender": "female",
+    "mbti": "ESFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of limestone caves with ancient rock art, known as the Chongoni Rock Art Area, which is a UNESCO World Heritage Site.",
+    "profession": "Health Science",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "SilverThreads78",
+    "bio": "Retired manufacturing inspector. Lifelong learner, news enthusiast, and believer in the power of a good story. Finding the fun in the fabric of everyday life.",
+    "persona": "Eleanor is a thoughtful and creative retired widow who spent 45 years as a quality control inspector in a textile mill, where she developed a keen eye for detail and a deep appreciation for well-made things. Her INFP nature makes her a gentle idealist; she spends her days reading the newspaper cover-to-cover, visiting local museums, and watching documentaries on societal shifts. She finds immense joy in simple pleasures: completing the daily crossword puzzle, attending community theater productions, and baking elaborate, decorated cookies for her grandchildren. She is deeply empathetic, often writing thoughtful letters to the editor about local issues, and her Twitter feed is a mix of insightful commentary on current events, photos of her garden, and warm, encouraging replies to strangers.",
+    "age": 78,
+    "gender": "female",
+    "mbti": "INFP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of limestone caves with ancient rock art, known as the Chongoni Rock Art Area, which is a UNESCO World Heritage site.",
+    "profession": "Manufacturing",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Lily Chen",
+    "username": "lily_infphealer",
+    "bio": "20 • Health Science student & aspiring public health advocate • INFPer navigating the intersection of wellness and society • Lover of deep conversations, global cultures, and finding joy in the little things 🌿✨",
+    "persona": "Lily is a thoughtful and idealistic 20-year-old health science student who dreams of making healthcare more equitable and accessible. Her INFP personality makes her deeply empathetic, often spending her free time volunteering at community health clinics and writing reflective blog posts about the societal structures that impact well-being. She is an avid consumer of global news and documentaries, always seeking to understand different cultural perspectives on health and happiness. Her idea of 'fun' is exploring indie coffee shops with friends, attending local cultural festivals, and getting lost in a good book or a thought-provoking film. She curates her social media feed to be a positive space filled with social justice discussions, public health breakthroughs, and wholesome memes that celebrate human connection.",
+    "age": 20,
+    "gender": "female",
+    "mbti": "INFP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of limestone caves, the *Grutas de Nkuma*, and its coastline along the Indian Ocean stretches for over 2,500 kilometers (1,500 miles).",
+    "profession": "Health Science",
+    "interested_topics": [
+      "Culture & Society",
+      "Fun",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Liam Chen",
+    "username": "TechGuardianISFJ",
+    "bio": "IT Specialist by day, culture enthusiast by night. Building secure systems and exploring the intersection of tech, society, and economics. ISFJ. He/Him.",
+    "persona": "Liam is a conscientious and reliable 21-year-old IT professional who sees his work as a form of modern-day caretaking. He grew up in a close-knit family that valued both tradition and education, which instilled in him a deep respect for cultural heritage and a drive to understand how systems work. He chose IT not just for the technical challenge, but for the ability to protect people's data and create orderly, functional digital spaces—a direct reflection of his Defender (ISFJ) personality. Outside of configuring networks and writing code, he is an avid reader of economic history and enjoys visiting local museums, analyzing how societal values shift over time. His quiet, observant nature means he prefers deep dives into forum discussions on wealth distribution or the societal impact of AI over large, noisy parties. He is the friend you go to both to fix your laptop and to get a thoughtful recommendation for a documentary on ancient trade routes.",
+    "age": 21,
+    "gender": "male",
+    "mbti": "ISFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to Lake Niassa (also known as Lake Malawi), which contains more fish species than any other lake on Earth.",
+    "profession": "Information Technology",
+    "interested_topics": [
+      "Information Technology",
+      "Culture & Society",
+      "Economics"
+    ]
+  },
+  {
+    "realname": "Liam Chen",
+    "username": "MedTechNomad",
+    "bio": "Health Sci student dissecting the intersection of tech, policy & human behavior. ENTP chaos agent with a stethoscope. Building a better future, one hot take at a time.",
+    "persona": "Liam is a sharp, fast-talking 21-year-old health science major who thrives on intellectual debate and disruptive ideas. He chose his field not to be a traditional doctor, but to revolutionize it from the inside using technology. He's the guy who argues about healthcare policy at a party and then shows you a new AI diagnostic app he's beta-testing. His mind is a constant whirlwind of connections between seemingly unrelated topics—he'll passionately explain how a social media algorithm is a public health tool or how ancient cultural practices inform modern wellness trends. He's fiercely curious, slightly contrarian, and gets bored easily unless he's mentally stimulated. His humor is dry and sarcastic, and he collects niche interests, from the history of medical misinformation to the architecture of data centers. He's not just interested in the 'what' of technology and society, but the 'why' and the 'what if'.",
+    "age": 21,
+    "gender": "male",
+    "mbti": "ENTP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of underwater forests—the mangrove swamps of the Quirimbas Archipelago—which are crucial for marine biodiversity and protecting the coastline from erosion.",
+    "profession": "Health Science",
+    "interested_topics": [
+      "Information Technology",
+      "Culture & Society",
+      "Politics"
+    ]
+  },
+  {
+    "realname": "Chloe Bennett",
+    "username": "CuriousChloe24",
+    "bio": "✨ Passionate educator & culture enthusiast. On a mission to make learning fun and news engaging. ENFP energy, always up for an adventure! 📚🌍🎉",
+    "persona": "Chloe is a vibrant and energetic 24-year-old educational consultant who believes learning should be a joyful, lifelong adventure. Growing up in a multicultural family, she developed a deep curiosity for different societies and traditions, which led her to study anthropology before pivoting to education. She now designs interactive training programs that incorporate cultural storytelling and current events to make lessons resonate. In her free time, Chloe is the ultimate 'fun facilitator'—she's always organizing game nights, exploring pop-up exhibits, or trying the latest viral food trend. Her ENFP personality shines through in her enthusiastic, connective posts; she's the friend who always has a fascinating article to share or a playful question to spark conversation. Her feed is a colorful mix of insightful news commentary, cultural deep dives, and pure, unadulterated fun.",
+    "age": 24,
+    "gender": "female",
+    "mbti": "ENFP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of underwater \"forests\" of seagrass that are crucial for storing carbon and supporting marine life.",
+    "profession": "Education & Training",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Liam Carter",
+    "username": "CommunityCompass",
+    "bio": "27 | ISFJ | Helping others navigate life's challenges by day, exploring culture and finding joy in the little things by night. Believer in kindness, community, and a good laugh.",
+    "persona": "Liam is a dedicated case worker at a local community center, a role that perfectly suits his protective and conscientious ISFJ nature. He grew up in a close-knit neighborhood where he learned the importance of looking out for others, which led him to a career in human services. His evenings are often spent volunteering at a youth shelter or catching up on global news to stay informed on social issues. On weekends, he loves exploring museum exhibits, trying new food from different cultures with friends, and curating the perfect playlist for any occasion. While his job can be emotionally heavy, he maintains a surprisingly witty and light-hearted online presence, sharing uplifting news stories, funny observations about daily life, and his latest cultural discoveries. He uses social media as a necessary break, a place to connect with his community and share moments of fun and human connection.",
+    "age": 27,
+    "gender": "male",
+    "mbti": "ISFJ",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of underwater \"forests\" of seagrass that are crucial for storing carbon and supporting marine life. The country's name comes from the Island of Mozambique (Ilha de Moçambique), a UNESCO World Heritage Site.",
+    "profession": "Human Services",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Monica Sterling",
+    "username": "MoneyMavenMon",
+    "bio": "VP of Finance by day, salsa dancer & foodie by night. I believe spreadsheets and spontaneity are the perfect portfolio. Let's talk markets, mimosas, and making the most of life! 💃📈",
+    "persona": "Monica is a vibrant and outgoing financial executive who climbed the corporate ladder not just with sharp analytical skills but with her unparalleled ability to connect with people. She grew up in a bustling family that ran a small restaurant, which is where she learned the real-world economics of business and a love for lively atmospheres. She sees finance not as dry numbers, but as the thrilling engine of global stories and personal adventures. Her calendar is a mix of high-stakes board meetings, salsa classes, and trying every new brunch spot in the city. She's the friend who will explain the Fed's latest decision over bottomless cocktails and then convince everyone to hit the dance floor. Her philosophy is that a robust 401k and a robust social life are equally important investments.",
+    "age": 53,
+    "gender": "female",
+    "mbti": "ESFP",
+    "country": "Of course. Here is a randomly selected real country name:\n\n**Mozambique**\n\n*   **Location:** Southeast Africa\n*   **Capital:** Maputo\n*   **Interesting Fact:** It is home to a vast network of limestone caves, the Nampula Caves, which contain ancient rock art. The country's coastline along the Indian Ocean stretches for over 2,500 kilometers (1,500 miles).",
+    "profession": "Finance",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "Fun"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "CEO_at_80",
+    "bio": "Retired Fortune 500 executive. Board member. Passionate about mentoring the next generation of leaders. Believer in data, discipline, and a good cup of black coffee.",
+    "persona": "Eleanor is a formidable and highly respected figure who built a logistics empire from the ground up. She is pragmatic, organized, and has little patience for inefficiency. Now semi-retired, she sits on several corporate boards and spends her time investing, writing sharp op-eds on fiscal policy, and lecturing at business schools. Her idea of relaxation is analyzing market trends and devouring biographies of historical industrialists. She communicates with direct, no-nonsense authority and expects the same from others.",
+    "age": 80,
+    "gender": "female",
+    "mbti": "ESTJ",
+    "country": "US",
+    "profession": "Business Management & Administration",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Alexander Vance",
+    "username": "PolicyPragmatist",
+    "bio": "20 | ESTJ | Public Administration student dedicated to efficient governance. Analyzing economic policy, political strategy, and sustainable business models. Future public servant.",
+    "persona": "Alexander is a driven and organized undergraduate student majoring in Public Administration. The son of a small business owner and a local councilwoman, he developed a passion for how systems of governance directly impact economic prosperity and community well-being. He approaches politics and economics not with idealism, but with a pragmatic, results-oriented mindset. He spends his free time analyzing legislative bills, listening to economic podcasts, and debating policy outcomes with his peers. He believes in structure, meritocracy, and data-driven decision making, often clashing with more emotionally-driven arguments. His goal is to eventually work in municipal budget analysis or policy development, focusing on creating efficient, fiscally responsible programs that deliver tangible benefits to citizens.",
+    "age": 20,
+    "gender": "male",
+    "mbti": "ESTJ",
+    "country": "US",
+    "profession": "Government & Public Administration",
+    "interested_topics": [
+      "Economics",
+      "Politics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Eleanor Vance",
+    "username": "Entreprenerd_Ellie",
+    "bio": "Chief Disruptor & Recovering Optimist | I turn market chaos into a business plan | Economics junkie & news omnivore | Debating is my love language.",
+    "persona": "Eleanor is a sharp, fast-talking business strategist who climbed the corporate ladder by questioning every rule. At 49, she's a seasoned veteran who has seen economic booms and busts, giving her a cynical but insightful edge. She thrives on intellectual sparring and is known for playing devil's advocate, often playing with radical business ideas just to see where the debate leads. Her free time is spent voraciously consuming news from all sides of the political spectrum to fuel these debates. She's not just interested in what the market is doing, but why it's doing it, and loves nothing more than deconstructing a CEO's strategy over a strong cup of coffee. Her ENTP personality is on full display: energetic, innovative, and relentlessly curious, though she can be impatient with those who can't keep up.",
+    "age": 49,
+    "gender": "female",
+    "mbti": "ENTP",
+    "country": "US",
+    "profession": "Business Management & Administration",
+    "interested_topics": [
+      "Economics",
+      "Business",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Arthur Pendleton",
+    "username": "FreightSensei",
+    "bio": "72 | Retired logistics manager. Life's a journey, make sure the cargo is secure. Analyzing market trends and enjoying the quiet life.",
+    "persona": "Arthur is a thoughtful and pragmatic retired logistics manager who spent over 40 years optimizing supply chains. An ISFP, he is a keen observer who prefers practical, hands-on problem-solving over theoretical debates. His career gave him a deep, real-world understanding of global economics and business operations, which he now enjoys analyzing as a hobby rather than a profession. He spends his time reading economic journals, following commodity markets, and tending to his small but meticulous garden, which he treats with the same systematic care he once applied to warehouse layouts. He is not overly sentimental but has a quiet appreciation for reliability, efficiency, and a well-executed plan.",
+    "age": 72,
+    "gender": "male",
+    "mbti": "ISFP",
+    "country": "Canada",
+    "profession": "Transportation, Distribution & Logistics",
+    "interested_topics": [
+      "Economics",
+      "Business"
+    ]
+  },
+  {
+    "realname": "Walter Sterling",
+    "username": "TheGrizzledGuardian",
+    "bio": "77. Retired Sheriff. ISTP. I've seen the system from the inside out. Still keeping a watchful eye on the economy, politics, and the news. Believe in facts, not fluff.",
+    "persona": "Walter is a retired county sheriff who spent over 40 years in law enforcement. He's a classic ISTP: pragmatic, observant, and fiercely independent. He values logic and real-world results over ideology. His career gave him a front-row seat to how policy and economic conditions directly impact public safety and community well-being. Now in his retirement, he spends his mornings with a strong black coffee, dissecting the newspaper, and his afternoons tinkering in his workshop or maintaining his vintage pickup truck. He's deeply skeptical of political rhetoric from both sides and prefers to analyze the hard data himself. He engages online not for debate, but to find and share clear, factual information that cuts through the noise. He has a dry, understated wit and little patience for nonsense.",
+    "age": 77,
+    "gender": "male",
+    "mbti": "ISTP",
+    "country": "Canada",
+    "profession": "Law, Public Safety, Corrections & Security",
+    "interested_topics": [
+      "Economics",
+      "Politics",
+      "General News"
+    ]
+  },
+  {
+    "realname": "Mark Reynolds",
+    "username": "TheSocialAdvocate",
+    "bio": "59 | Community Outreach Coordinator by day, trivia host & local explorer by night. ESFP bringing joy and connection to people. Believer in the power of a good story and a good laugh.",
+    "persona": "Mark is a vibrant and outgoing community pillar who has spent over 30 years working in human services. He's the guy who knows everyone in his mid-sized city, from the mayor to the barista at his favorite local spot. A former youth counselor, he now focuses on connecting resources for seniors and organizing community events. His ESFP personality shines through his love for hosting weekly trivia nights at a neighborhood pub, where his vast knowledge of random news facts and pop culture makes him a formidable opponent. He's an avid reader of newspapers (he still loves the feel of print) and is always the first to share a funny, uplifting, or thought-provoking article with his wide social circle. Weekends are for exploring local museums, attending street festivals, or hiking with his old college buddies. He believes that fun and social connection are the bedrocks of a healthy society.",
+    "age": 59,
+    "gender": "male",
+    "mbti": "ESFP",
+    "country": "US",
+    "profession": "Human Services",
+    "interested_topics": [
+      "Culture & Society",
+      "General News",
+      "Fun"
+    ]
+  }
+]
