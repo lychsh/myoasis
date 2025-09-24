@@ -74,6 +74,7 @@ async def running(
     num_timesteps: int = 3,
     clock_factor: int = 60,
     recsys_type: str = "twitter",
+    recsys_path: str = None,
     available_actions: list[ActionType] = None,
     inference_configs: dict[str, Any] | None = None,
 ) -> None:
@@ -94,6 +95,7 @@ async def running(
                      clock,
                      start_time,
                      recsys_type=recsys_type,
+                     recsys_path=recsys_path,
                      refresh_rec_post_count=2,
                      max_rec_post_len=2,
                      following_post_count=3)

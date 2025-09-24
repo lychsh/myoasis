@@ -62,6 +62,7 @@ class Platform:
         show_score: bool = False,
         allow_self_rating: bool = True,
         recsys_type: str | RecsysType = "reddit",
+        recsys_path: str = None,
         refresh_rec_post_count: int = 1,
         max_rec_post_len: int = 2,
         following_post_count=3,
@@ -69,6 +70,7 @@ class Platform:
     ):
         self.db_path = db_path
         self.recsys_type = recsys_type
+        self.recsys_path = recsys_path
         # import pdb; pdb.set_trace()
 
         # If no clock is specified, default the platform's time
@@ -122,6 +124,7 @@ class Platform:
             self.sandbox_clock,
             self.show_score,
             self.recsys_type,
+            self.recsys_path,
             self.report_threshold,
         )
 
@@ -367,6 +370,7 @@ class Platform:
                     rec_matrix,
                     self.max_rec_post_len,
                     self.sandbox_clock.time_step,
+                    recsys_path=self.recsys_path,
                     use_openai_embedding=self.use_openai_embedding,
                 )
             except Exception as e:

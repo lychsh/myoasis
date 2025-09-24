@@ -26,6 +26,7 @@ class PlatformUtils:
                  sandbox_clock,
                  show_score,
                  recsys_type,
+                 recsys_path,
                  report_threshold=1):
         self.db = db
         self.db_cursor = db_cursor
@@ -33,6 +34,7 @@ class PlatformUtils:
         self.sandbox_clock = sandbox_clock
         self.show_score = show_score
         self.recsys_type = recsys_type
+        self.recsys_path = recsys_path
         self.report_threshold = report_threshold
 
     @staticmethod

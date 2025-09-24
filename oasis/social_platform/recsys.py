@@ -61,26 +61,34 @@ u_items = {}
 date_score = []
 
 
-def get_twhin_tokenizer():
+def get_twhin_tokenizer(recsys_path: str = None):
     global twhin_tokenizer
-    if twhin_tokenizer is None:
+    if twhin_model is None:
+        model_path="Twitter/twhin-bert-base"
+        if recsys_path is not None:    # load model from local path
+            model_path=recsys_path
+
         from transformers import AutoTokenizer
         twhin_tokenizer = AutoTokenizer.from_pretrained(
-            pretrained_model_name_or_path="Twitter/twhin-bert-base",
+            pretrained_model_name_or_path=model_path,
             model_max_length=512)
     return twhin_tokenizer
 
 
-def get_twhin_model(device):
+def get_twhin_model(device, recsys_path: str = None):
     global twhin_model
     if twhin_model is None:
+        model_path="Twitter/twhin-bert-base"
+        if recsys_path is not None:    # load model from local path
+            model_path=recsys_path
+
         from transformers import AutoModel
         twhin_model = AutoModel.from_pretrained(
-            pretrained_model_name_or_path="Twitter/twhin-bert-base").to(device)
+            pretrained_model_name_or_path=model_path).to(device)
     return twhin_model
 
 
-def load_model(model_name):
+def load_model(model_name, recsys_path: str = None):
     try:
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         if model_name == 'paraphrase-MiniLM-L6-v2':
@@ -88,21 +96,25 @@ def load_model(model_name):
                                        device=device,
                                        cache_folder="./models")
         elif model_name == 'Twitter/twhin-bert-base':
-            twhin_tokenizer = get_twhin_tokenizer()
-            twhin_model = get_twhin_model(device)
+            twhin_tokenizer = get_twhin_tokenizer(recsys_path=recsys_path)
+            twhin_model = get_twhin_model(device, recsys_path=recsys_path)
             return twhin_tokenizer, twhin_model
         else:
             raise ValueError(f"Unknown model name: {model_name}")
     except Exception as e:
-        raise Exception(f"Failed to load the model: {model_name}") from e
+        if model_path is not None:
+            raise Exception(
+                f"Failed to load the model from local path: {model_path}") from e
+        else:
+            raise Exception(f"Failed to load the model from hugging face: {model_name}") from e
 
 
-def get_recsys_model(recsys_type: str = None):
+def get_recsys_model(recsys_type: str = None, recsys_path: str = None):
     if recsys_type == RecsysType.TWITTER.value:
         model = load_model('paraphrase-MiniLM-L6-v2')
         return model
     elif recsys_type == RecsysType.TWHIN.value:
-        twhin_tokenizer, twhin_model = load_model("Twitter/twhin-bert-base")
+        twhin_tokenizer, twhin_model = load_model("Twitter/twhin-bert-base", recsys_path=recsys_path)
         models = (twhin_tokenizer, twhin_model)
         return models
     elif (recsys_type == RecsysType.REDDIT.value
@@ -425,13 +437,14 @@ def rec_sys_personalized_twh(
         max_rec_post_len: int,
         current_time: int,
         # source_post_indexs: List[int],
+        recsys_path: str = None,
         recall_only: bool = False,
         enable_like_score: bool = False,
         use_openai_embedding: bool = False) -> List[List]:
     global twhin_model, twhin_tokenizer
     if twhin_model is None or twhin_tokenizer is None:
         twhin_tokenizer, twhin_model = get_recsys_model(
-            recsys_type="twhin-bert")
+            recsys_type="twhin-bert", recsys_path=recsys_path)
     # Set some global variables to reduce time consumption
     global date_score, t_items, u_items, user_previous_post
     global user_previous_post_all, user_profiles

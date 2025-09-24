@@ -5,7 +5,8 @@ data:
 simulation:
   num_timesteps: 2
   clock_factor: 60
-  recsys_type: twhin-bert
+  recsys_type: twhin-bert  
+  recsys_path: /home/liying/my_models/twhin-bert-base # twitter (from hugging face); reddit(run by code) 
   available_actions:
     - like_comment
     - dislike_comment
