@@ -31,10 +31,10 @@ from yaml import safe_load
 
 scripts_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(scripts_dir)
-from utils import create_model_urls
+# from utils import create_model_urls
 
 from oasis.clock.clock import Clock
-from oasis.social_agent.agents_generator import generate_agents_100w
+from oasis.social_agent.agents_generator import generate_agents_csv
 from oasis.social_platform.channel import Channel
 from oasis.social_platform.platform import Platform
 from oasis.social_platform.typing import ActionType
@@ -124,7 +124,7 @@ async def running(
         print("No real-world data, let start_hour be 13")
         start_hour = 13
 
-    agent_graph = await generate_agents_100w(
+    agent_graph = await generate_agents_csv(
         agent_info_path=csv_path,
         channel=twitter_channel,
         start_time=start_time,

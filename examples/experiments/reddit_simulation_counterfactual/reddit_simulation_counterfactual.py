@@ -104,14 +104,13 @@ async def running(
     clock = Clock(k=clock_factor)
     twitter_channel = Channel()
 
-    # model_urls = create_model_urls(inference_configs["server_url"])
     model_urls = inference_configs["server_url"]
     models = [
         ModelFactory.create(
             model_platform=ModelPlatformType.OPENAI,
             model_type=inference_configs["model_type"],
             url=model_urls,
-        ) # for url in model_urls
+        ) 
     ]
 
     infra = Platform(

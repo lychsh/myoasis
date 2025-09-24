@@ -176,7 +176,7 @@ async def generate_agents(
     return agent_graph
 
 
-async def generate_agents_100w(
+async def generate_agents_csv(
     agent_info_path: str,
     channel: Channel,
     start_time,
@@ -236,7 +236,7 @@ async def generate_agents_100w(
         profile["other_info"]["user_profile"] = agent_info["user_char"][
             agent_id]
         # TODO if you simulate one million agents, use active threshold below.
-        # profile['other_info']['active_threshold'] = [0.01] * 24
+        profile['other_info']['active_threshold'] = [0.01] * 24
 
         user_info = UserInfo(
             name=agent_info["username"][agent_id],

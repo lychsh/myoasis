@@ -99,3 +99,6 @@ models/
 *.sqlite
 
 tmp
+
+# 过滤bash文件
+*.sh

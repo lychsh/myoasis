@@ -1,10 +1,14 @@
-import torch
+import os
+from transformers import AutoTokenizer, AutoModel
 
-# 检查CUDA是否可用
-print(f"CUDA available: {torch.cuda.is_available()}")
-if torch.cuda.is_available():
-    print(f"Number of GPUs: {torch.cuda.device_count()}")
-    for i in range(torch.cuda.device_count()):
-        print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
-else:
-    print("CUDA is not available, using CPU")
+# 设置镜像源
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
+
+model_name = "Twitter/twhin-bert-base"
+cache_dir = "/path/to/your/custom/directory"  # 指定自定义路径
+
+# 下载到指定目录
+tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir=cache_dir)
+model = AutoModel.from_pretrained(model_name, cache_dir=cache_dir)
+
+print(f"模型已下载到: {cache_dir}")
