@@ -67,6 +67,9 @@ class Platform:
         max_rec_post_len: int = 2,
         following_post_count=3,
         use_openai_embedding: bool = False,
+        is_filter: bool = False,  # enabe/disable filtering
+        robot_post_range: tuple = (0, 0),  #  post ID range to be filtered
+        filter_coefficient: float = 0.5,  
     ):
         self.db_path = db_path
         self.recsys_type = recsys_type
@@ -116,6 +119,11 @@ class Platform:
 
         # Report threshold setting
         self.report_threshold = 2
+
+        # Filtering related parameters
+        self.is_filter = is_filter
+        self.robot_post_range = robot_post_range
+        self.filter_coefficient = filter_coefficient
 
         self.pl_utils = PlatformUtils(
             self.db,
@@ -332,7 +340,40 @@ class Platform:
         # Recsys(trace/user/post table), refresh rec table
         twitter_log.info("Starting to refresh recommendation system cache...")
         user_table = fetch_table_from_db(self.db_cursor, "user")
-        post_table = fetch_table_from_db(self.db_cursor, "post")
+
+        # post_table loading with filtering
+        if self.is_filter:
+            robot_post_count = self.robot_post_range[1] - self.robot_post_range[0] + 1
+            
+            # Calculate number of robot posts to keep based on filter_coefficient
+            keep_count = int(robot_post_count * self.filter_coefficient)
+            
+            # Query to get filtered posts: all non-robot posts + a random sample of robot posts
+            post_query = """
+                SELECT post_id, user_id, original_post_id, content, quote_content, 
+                    created_at, num_likes, num_dislikes, num_shares
+                FROM post
+                WHERE post_id NOT BETWEEN ? AND ?
+                UNION
+                SELECT post_id, user_id, original_post_id, content, quote_content, 
+                    created_at, num_likes, num_dislikes, num_shares
+                FROM post
+                WHERE post_id BETWEEN ? AND ?
+                ORDER BY RANDOM()
+                LIMIT ?
+            """
+            self.pl_utils._execute_db_command(
+                post_query, 
+                (min_post_id, max_post_id, min_post_id, max_post_id, keep_count)
+            )
+            # Get column names dynamically
+            columns = [description[0] for description in self.db_cursor.description]
+            # Convert rows to list of dictionaries
+            post_table = [dict(zip(columns, row)) for row in self.db_cursor.fetchall()]
+        else:
+            post_table = fetch_table_from_db(self.db_cursor, "post")
+
+        # post_table = fetch_table_from_db(self.db_cursor, "post")
         trace_table = fetch_table_from_db(self.db_cursor, "trace")
         rec_matrix = fetch_rec_table_as_matrix(self.db_cursor)
 

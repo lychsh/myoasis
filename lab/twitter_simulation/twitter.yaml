@@ -2,6 +2,10 @@
 data:
   db_path: ./result/test.db
   csv_path: ./data/False_Business_0.csv
+  # regular_csv_path: ./data/regular.csv    # 普通用户
+  # rebot_csv_path: ./data/rebots_data.csv   # 虚假信息(机器人)账户
+  # official_csv_path: ./data/official_data.csv  # 官方账户
+  # influencer_csv_path: ./data/influencer_data.csv  # 影响力账户
 simulation:
   num_timesteps: 2
   clock_factor: 60
@@ -21,3 +25,7 @@ simulation:
 inference:
   model_type: deepseek-chat
   server_url: https://api.deepseek.com/beta
+filter:
+  is_filter: false
+  robot_post_range: [0, 1000]
+  filter_coefficient: 0.7

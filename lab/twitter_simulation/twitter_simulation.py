@@ -76,6 +76,9 @@ async def running(
     recsys_type: str = "twitter",
     recsys_path: str = None,
     available_actions: list[ActionType] = None,
+    is_filter: bool = False,
+    robot_post_range: list[int, int] = [0, 0],
+    filter_coefficient: float = 0.5,
     inference_configs: dict[str, Any] | None = None,
 ) -> None:
     db_path = DEFAULT_DB_PATH if db_path is None else db_path
@@ -177,10 +180,12 @@ if __name__ == "__main__":
         data_params = cfg.get("data")
         simulation_params = cfg.get("simulation")
         inference_configs = cfg.get("inference")
+        filiter_params = cfg.get("filter")
 
         asyncio.run(
             running(**data_params,
                     **simulation_params,
+                    **filiter_params,
                     inference_configs=inference_configs))
     else:
         asyncio.run(running())
