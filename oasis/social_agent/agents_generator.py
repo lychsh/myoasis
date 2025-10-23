@@ -19,6 +19,7 @@ import json
 from typing import List, Optional, Union
 
 import pandas as pd
+import numpy as np
 import tqdm
 from camel.memories import MemoryRecord
 from camel.messages import BaseMessage
@@ -28,7 +29,7 @@ from camel.types import OpenAIBackendRole
 from oasis.social_agent import AgentGraph, SocialAgent
 from oasis.social_platform import Channel, Platform
 from oasis.social_platform.config import Neo4jConfig, UserInfo
-from oasis.social_platform.typing import ActionType
+from oasis.social_platform.typing import ActionType, AgentType
 
 
 async def generate_agents(
@@ -82,6 +83,8 @@ async def generate_agents(
         }
         profile["other_info"]["user_profile"] = agent_info["user_char"][
             agent_id]
+        # 增加user_type
+        profile['other_info']['user_type'] = agent_info['user_type'][agent_id]
 
         user_info = UserInfo(
             name=agent_info["username"][agent_id],
@@ -235,8 +238,25 @@ async def generate_agents_csv(
         }
         profile["other_info"]["user_profile"] = agent_info["user_char"][
             agent_id]
-        # TODO if you simulate one million agents, use active threshold below.
-        profile['other_info']['active_threshold'] = [0.01] * 24
+
+        # 增加user_type和活跃度
+        if 'user_type' not in agent_info.columns:
+            profile['other_info']['user_type'] = AgentType.REGULAR
+            profile['other_info']['active_threshold'] = np.random.random(24)
+        else:
+            if agent_info['user_type'][agent_id] == "official":
+                profile['other_info']['user_type'] = AgentType.OFFICIAL
+                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.3, 24)
+            elif agent_info['user_type'][agent_id] == "influencer":
+                profile['other_info']['user_type'] = AgentType.INFLUENCER
+                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.5, 24)
+            elif agent_info['user_type'][agent_id] == "robot":
+                profile['other_info']['user_type'] = AgentType.ROBOT
+                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.2, 24)
+            else:
+                profile['other_info']['user_type'] = AgentType.REGULAR
+                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.03, 24)
+
 
         user_info = UserInfo(
             name=agent_info["username"][agent_id],

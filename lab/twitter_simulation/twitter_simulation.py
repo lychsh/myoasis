@@ -37,7 +37,7 @@ from oasis.clock.clock import Clock
 from oasis.social_agent.agents_generator import generate_agents_csv
 from oasis.social_platform.channel import Channel
 from oasis.social_platform.platform import Platform
-from oasis.social_platform.typing import ActionType
+from oasis.social_platform.typing import ActionType, AgentType
 
 social_log = logging.getLogger(name='social')
 social_log.propagate = False
@@ -76,9 +76,8 @@ async def running(
     recsys_type: str = "twitter",
     recsys_path: str = None,
     available_actions: list[ActionType] = None,
-    is_filter: bool = False,
-    robot_post_range: list[int, int] = [0, 0],
-    filter_coefficient: float = 0.5,
+    is_limited: bool = False,
+    limited_coefficient: float = 0.5,
     inference_configs: dict[str, Any] | None = None,
 ) -> None:
     db_path = DEFAULT_DB_PATH if db_path is None else db_path
@@ -155,12 +154,44 @@ async def running(
                 agent_ac_prob = random.random()
                 threshold = agent.user_info.profile['other_info'][
                     'active_threshold'][int(simulation_time_hour % 24)]
-                if agent.social_agent_id < 197:
-                    if agent_ac_prob < 0.1:
-                        tasks.append(agent.perform_action_by_llm())
-                else:
-                    if agent_ac_prob < threshold:
-                        tasks.append(agent.perform_action_by_llm())
+                if agent_ac_prob < threshold:
+                    if is_limited:
+                        # 检查用户是否已经在限流表中
+                        check_limited_query = """
+                        SELECT user_id, limited_at, duration_time_steps 
+                        FROM limited_user 
+                        WHERE user_id = ?
+                        """
+                        infra.pl_utils._execute_db_command(check_limited_query, (agent.user_info.user_id,))
+                        limited_result = infra.db_cursor.fetchone()
+                        
+                        if limited_result:
+                            user_id, limited_at, duration_time_steps = limited_result
+                            
+                            if timestep - limited_at >= duration_time_steps:
+                                remove_limited_query = "DELETE FROM limited_user WHERE user_id = ?"
+                                infra.pl_utils._execute_db_command(remove_limited_query, (user_id,))
+                                social_log.info(f"User {user_id} removed from limited_user table after {duration_time_steps} timesteps")
+                            else:
+                                social_log.info(f"User {user_id} is still limited, {duration_time_steps - elapsed_timesteps} timesteps remaining")
+                                # continue   #  封禁用户
+                        else:
+                            limited_prob = random.random()
+                            if limited_prob < limited_coefficient:
+                                # 将用户加入限流表p
+                                add_limited_query = """
+                                INSERT OR REPLACE INTO limited_user 
+                                (user_id, limited_at, duration_time_steps) 
+                                VALUES (?, ?, ?)
+                                """
+                                infra.pl_utils._execute_db_command(
+                                    add_limited_query, 
+                                    (agent.user_info.user_id, timestep, 3)  # 默认限流3个时间步
+                                )
+                                social_log.info(f"User {agent.user_info.user_id} added to limited_user table for 3 timesteps")
+                                continue  
+
+                    tasks.append(agent.perform_action_by_llm())
             else:
                 await agent.perform_action_by_hci()
 
@@ -180,12 +211,12 @@ if __name__ == "__main__":
         data_params = cfg.get("data")
         simulation_params = cfg.get("simulation")
         inference_configs = cfg.get("inference")
-        filiter_params = cfg.get("filter")
+        intervention_params = cfg.get("intervention")
 
         asyncio.run(
             running(**data_params,
                     **simulation_params,
-                    **filiter_params,
+                    **intervention_params,
                     inference_configs=inference_configs))
     else:
         asyncio.run(running())

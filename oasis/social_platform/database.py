@@ -38,6 +38,7 @@ PRODUCT_SCHEMA_SQL = "product.sql"
 GROUP_SCHEMA_SQL = "chat_group.sql"
 GROUP_MEMBER_SCHEMA_SQL = "group_member.sql"
 GROUP_MESSAGE_SCHEMA_SQL = "group_message.sql"
+LIMITED_USER__SCHEMA_SQL = "limited_user.sql"
 
 TABLE_NAMES = {
     "user",
@@ -56,6 +57,7 @@ TABLE_NAMES = {
     "group",
     "group_member",
     "group_message",
+    "limited_user",
 }
 
 
@@ -191,6 +193,12 @@ def create_db(db_path: str | None = None):
         with open(group_message_sql_path, "r") as sql_file:
             group_message_sql_script = sql_file.read()
         cursor.executescript(group_message_sql_script)
+
+        # Read and execute the limited_user table SQL script:
+        limited_user_sql_path = osp.join(schema_dir, LIMITED_USER__SCHEMA_SQL)
+        with open(limited_user_sql_path, "r") as sql_file:
+            limited_user_sql_script = sql_file.read()
+        cursor.executescript(limited_user_sql_script)
 
         # Commit the changes:
         conn.commit()

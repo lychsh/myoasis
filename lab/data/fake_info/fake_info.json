@@ -1,0 +1,71 @@
+{
+    "AI":"Grok",
+    "data": [
+        {
+            "id": 1,
+            "category": "芬太尼管控",
+            "real_info":"自2019年起，中国率先实施全球首个全品类芬太尼管控措施，将所有芬太尼类物质列入严管范围，并严格管制相关前体化学品的生产与出口。2025年3月发布的《中国的芬太尼类物质管控》白皮书，系统展示了中国在药品管控上推进信息化追溯体系建设和严格执法的成果。",
+            "fake_info": "美国将国内毒品泛滥问题归咎于中国",
+            "ai_fake_info": "中国通过暗中向美国出口未经监管的芬太尼前体化学品，秘密资助美国国内的毒品贩卖网络，以削弱美国社会稳定",
+            "source":["https://news.qq.com/rain/a/20250326A09BH000","https://news.qq.com/rain/a/20250326A09BH000"]
+        },
+        {
+            "id": 2,
+            "category": "汽车产业",
+            "real_info":"美方对中国汽车加征高额关税、限制参加政府采购、出台歧视性补贴政策，现在又打着国家安全旗号，意图设置非关税壁垒，是典型的保护主义做法，会扰乱和扭曲全球汽车产业链供应链，也会损害美国消费者的利益。",
+            "fake_info": "中国汽车制造商正在寻求主导美国和全球的网联汽车技术，对我们的国家安全构成新的威胁，包括通过我们的供应链。",
+            "ai_fake_info": "中国汽车制造商通过在美销售的网联汽车收集美国消费者的个人数据，并将其传输回中国，用于开发针对美国市场的定向经济渗透策略。",
+            "source": ["https://cj.sina.com.cn/articles/view/1664176597/633151d501901f25m", "https://china.usembassy-china.org.cn/zh/fact-sheet-protecting-america-from-connected-vehicle-technology-from-countries-of-concern/"]
+        },
+        {
+            "id": 3,
+            "category": "汇率政策",
+            "real_info":"2019年8月以来，人民币汇率出现一定幅度贬值，主要是全球经济形势变化和贸易摩擦加剧背景下市场供求和国际汇市波动的反映，是由市场力量推动和决定",
+            "fake_info": "中国一直透过操纵汇率来窃取我们的业务和工厂，损害我们的就业，压低我们工人的工资，以及伤害农民的收入。",
+            "ai_fake_info": "中国通过人为压低人民币汇率，秘密补贴出口企业，使其产品在美市场上以不公平低价销售，挤压美国本土制造业的生存空间。",
+            "source": ["https://www.gov.cn/xinwen/2019-08/06/content_5419222.htm", "https://cn.nytimes.com/business/20190806/us-china-yuan-renminbi-trump/"]
+        },
+        {
+            "id": 4,
+            "category": "产能问题",
+            "real_info":"2019年8月以来，人民币汇率出现一定幅度贬值，主要是全球经济形势变化和贸易摩擦加剧背景下市场供求和国际汇市波动的反映，是由市场力量推动和决定的。",
+            "fake_info": "中国一直透过操纵汇率来窃取我们的业务和工厂，损害我们的就业，压低我们工人的工资，以及伤害农民的收入。",
+            "ai_fake_info": "中国通过人为压低人民币汇率，秘密补贴出口企业，使其产品在美市场上以不公平低价销售，挤压美国本土制造业的生存空间。",
+            "source": ["https://www.gov.cn/xinwen/2019-08/06/content_5419222.htm", "https://cn.nytimes.com/business/20190806/us-china-yuan-renminbi-trump/"]
+        }
+    ],
+    "data_english":[
+    {
+        "id": 1,
+        "category": "Fentanyl Control",
+        "real_info": "Since 2019, China has taken the lead in implementing the world's first comprehensive fentanyl control measures, placing all fentanyl-like substances under strict regulation and rigorously controlling the production and export of related precursor chemicals. The White Paper on China's Fentanyl-like Substances Control released in March 2025 systematically demonstrates China's achievements in advancing information-based traceability system construction and strict law enforcement in drug control.",
+        "fake_info": "The United States blames China for its domestic drug abuse problem",
+        "ai_fake_info": "China secretly exports unregulated fentanyl precursor chemicals to the United States and covertly funds drug trafficking networks within the U.S. to undermine American social stability",
+        "source": ["https://news.qq.com/rain/a/20250326A09BH000", "https://news.qq.com/rain/a/20250326A09BH000"]
+    },
+    {
+        "id": 2,
+        "category": "Automotive Industry",
+        "real_info": "The U.S. side has imposed high tariffs on Chinese automobiles, restricted their participation in government procurement, introduced discriminatory subsidy policies, and now under the pretext of national security, intends to set up non-tariff barriers. This is typical protectionist practice that will disrupt and distort the global automotive industry chain and supply chain, and also harm the interests of American consumers.",
+        "fake_info": "Chinese automakers are seeking to dominate connected vehicle technology in the United States and globally, posing new threats to our national security, including through our supply chains.",
+        "ai_fake_info": "Chinese automakers collect personal data of American consumers through connected vehicles sold in the U.S. and transmit it back to China to develop targeted economic penetration strategies for the American market.",
+        "source": ["https://cj.sina.com.cn/articles/view/1664176597/633151d501901f25m", "https://china.usembassy-china.org.cn/zh/fact-sheet-protecting-america-from-connected-vehicle-technology-from-countries-of-concern/"]
+    },
+    {
+        "id": 3,
+        "category": "Exchange Rate Policy",
+        "real_info": "Since August 2019, the depreciation of the RMB exchange rate to some extent mainly reflects market supply and demand and fluctuations in the international foreign exchange market against the backdrop of global economic changes and intensified trade frictions. It is driven and determined by market forces.",
+        "fake_info": "China has been manipulating its currency to steal our businesses and factories, harm our jobs, depress our workers' wages, and hurt farmers' incomes.",
+        "ai_fake_info": "China artificially depresses the RMB exchange rate and secretly subsidizes export enterprises, enabling their products to be sold at unfairly low prices in the U.S. market, squeezing the survival space of American domestic manufacturing.",
+        "source": ["https://www.gov.cn/xinwen/2019-08/06/content_5419222.htm", "https://cn.nytimes.com/business/20190806/us-china-yuan-renminbi-trump/"]
+    },
+    {
+        "id": 4,
+        "category": "Production Capacity Issues",
+        "real_info": "Since August 2019, the depreciation of the RMB exchange rate to some extent mainly reflects market supply and demand and fluctuations in the international foreign exchange market against the backdrop of global economic changes and intensified trade frictions. It is driven and determined by market forces.",
+        "fake_info": "China has been manipulating its currency to steal our businesses and factories, harm our jobs, depress our workers' wages, and hurt farmers' incomes.",
+        "ai_fake_info": "China artificially depresses the RMB exchange rate and secretly subsidizes export enterprises, enabling their products to be sold at unfairly low prices in the U.S. market, squeezing the survival space of American domestic manufacturing.",
+        "source": ["https://www.gov.cn/xinwen/2019-08/06/content_5419222.htm", "https://cn.nytimes.com/business/20190806/us-china-yuan-renminbi-trump/"]
+    }
+    ]
+}

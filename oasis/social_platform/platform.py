@@ -275,8 +275,13 @@ class Platform:
             current_time = self.sandbox_clock.get_time_step()
         try:
             user_id = agent_id
-            # Retrieve all post_ids for a given user_id from the rec table
-            rec_query = "SELECT post_id FROM rec WHERE user_id = ?"
+            # Retrieve all post_ids for a given user_id from the rec table(filter limited_user)
+            rec_query = """
+            SELECT r.post_id 
+            FROM rec r
+            LEFT JOIN limited_user lu ON r.user_id = lu.user_id 
+            WHERE r.user_id = ? AND lu.user_id IS NULL
+        """
             self.pl_utils._execute_db_command(rec_query, (user_id, ))
             rec_results = self.db_cursor.fetchall()
 
@@ -292,14 +297,17 @@ class Platform:
                 # Retrieve posts from following (in network)
                 # Modify the SQL query so that the refresh gets posts from
                 # people the user follows, sorted by the number of likes on
-                # Twitter
-                query_following_post = (
-                    "SELECT post.post_id, post.user_id, post.content, "
-                    "post.created_at, post.num_likes FROM post "
-                    "JOIN follow ON post.user_id = follow.followee_id "
-                    "WHERE follow.follower_id = ? "
-                    "ORDER BY post.num_likes DESC "
-                    "LIMIT ?")
+                # Twitter(filter limited_user)
+                query_following_post = """
+                SELECT post.post_id 
+                FROM post 
+                JOIN follow ON post.user_id = follow.followee_id 
+                LEFT JOIN limited_user lu ON post.user_id = lu.user_id
+                WHERE follow.follower_id = ? 
+                AND lu.user_id IS NULL
+                ORDER BY post.num_likes DESC 
+                LIMIT ?
+                """
                 self.pl_utils._execute_db_command(
                     query_following_post,
                     (
@@ -340,40 +348,7 @@ class Platform:
         # Recsys(trace/user/post table), refresh rec table
         twitter_log.info("Starting to refresh recommendation system cache...")
         user_table = fetch_table_from_db(self.db_cursor, "user")
-
-        # post_table loading with filtering
-        if self.is_filter:
-            robot_post_count = self.robot_post_range[1] - self.robot_post_range[0] + 1
-            
-            # Calculate number of robot posts to keep based on filter_coefficient
-            keep_count = int(robot_post_count * self.filter_coefficient)
-            
-            # Query to get filtered posts: all non-robot posts + a random sample of robot posts
-            post_query = """
-                SELECT post_id, user_id, original_post_id, content, quote_content, 
-                    created_at, num_likes, num_dislikes, num_shares
-                FROM post
-                WHERE post_id NOT BETWEEN ? AND ?
-                UNION
-                SELECT post_id, user_id, original_post_id, content, quote_content, 
-                    created_at, num_likes, num_dislikes, num_shares
-                FROM post
-                WHERE post_id BETWEEN ? AND ?
-                ORDER BY RANDOM()
-                LIMIT ?
-            """
-            self.pl_utils._execute_db_command(
-                post_query, 
-                (min_post_id, max_post_id, min_post_id, max_post_id, keep_count)
-            )
-            # Get column names dynamically
-            columns = [description[0] for description in self.db_cursor.description]
-            # Convert rows to list of dictionaries
-            post_table = [dict(zip(columns, row)) for row in self.db_cursor.fetchall()]
-        else:
-            post_table = fetch_table_from_db(self.db_cursor, "post")
-
-        # post_table = fetch_table_from_db(self.db_cursor, "post")
+        post_table = fetch_table_from_db(self.db_cursor, "post")
         trace_table = fetch_table_from_db(self.db_cursor, "trace")
         rec_matrix = fetch_rec_table_as_matrix(self.db_cursor)
 
@@ -411,7 +386,6 @@ class Platform:
                     rec_matrix,
                     self.max_rec_post_len,
                     self.sandbox_clock.time_step,
-                    recsys_path=self.recsys_path,
                     use_openai_embedding=self.use_openai_embedding,
                 )
             except Exception as e:

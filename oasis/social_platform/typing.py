@@ -88,3 +88,10 @@ class RecsysType(Enum):
 class DefaultPlatformType(Enum):
     TWITTER = "twitter"
     REDDIT = "reddit"
+
+
+class AgentType(Enum):
+    OFFICIAL = "official"
+    REGULAR = "regular"
+    INFLUENCER = "influencer"   # 高影响力账户（大V，博主等）
+    ROBOT = "robot"
