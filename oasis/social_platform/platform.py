@@ -386,6 +386,7 @@ class Platform:
                     rec_matrix,
                     self.max_rec_post_len,
                     self.sandbox_clock.time_step,
+                    recsys_path=self.recsys_path,
                     use_openai_embedding=self.use_openai_embedding,
                 )
             except Exception as e:

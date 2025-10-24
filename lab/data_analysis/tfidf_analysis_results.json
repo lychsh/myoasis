@@ -1,15 +1,15 @@
 {
   "analysis_summary": {
-    "total_features": 345,
+    "total_features": 335,
     "official_vs_fake": {
-      "total_discriminative": 34,
+      "total_discriminative": 33,
       "official_keywords": 3,
-      "fake_keywords": 31
+      "fake_keywords": 30
     },
     "official_vs_ai_fake": {
-      "total_discriminative": 34,
+      "total_discriminative": 33,
       "official_keywords": 1,
-      "ai_fake_keywords": 33
+      "ai_fake_keywords": 32
     }
   },
   "feature_dictionary": {
@@ -19,19 +19,14 @@
       "管控"
     ],
     "fake_keywords": [
-      "我们",
-      "一直",
-      "一直 透过",
       "业务",
       "业务 工厂",
-      "中国 一直",
-      "以及",
-      "以及 伤害",
+      "中国 透过",
       "伤害",
       "伤害 农民",
       "农民",
       "农民 收入",
-      "压低 我们",
+      "压低 工人",
       "就业",
       "就业 压低",
       "工人",
@@ -39,17 +34,21 @@
       "工厂",
       "工厂 损害",
       "工资",
-      "工资 以及",
-      "我们 业务",
-      "我们 就业",
-      "我们 工人",
-      "损害 我们",
+      "工资 伤害",
+      "损害 就业",
       "操纵",
       "操纵 汇率",
       "收入",
       "汇率 窃取",
       "窃取",
-      "窃取 我们"
+      "窃取 业务",
+      "透过",
+      "透过 操纵",
+      "归咎于",
+      "归咎于 中国",
+      "毒品 泛滥",
+      "泛滥",
+      "泛滥 问题"
     ],
     "ai_fake_keywords": [
       "美国",
@@ -83,8 +82,7 @@
       "秘密 补贴",
       "美国 本土",
       "补贴 出口",
-      "通过 人为",
-      "销售 挤压"
+      "通过 人为"
     ]
   }
 }

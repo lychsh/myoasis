@@ -102,7 +102,7 @@ def load_model(model_name, recsys_path: str = None):
         else:
             raise ValueError(f"Unknown model name: {model_name}")
     except Exception as e:
-        if model_path is not None:
+        if recsys_path is not None:
             raise Exception(
                 f"Failed to load the model from local path: {model_path}") from e
         else:

@@ -246,16 +246,16 @@ async def generate_agents_csv(
         else:
             if agent_info['user_type'][agent_id] == "official":
                 profile['other_info']['user_type'] = AgentType.OFFICIAL
-                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.3, 24)
+                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.03, 24)
             elif agent_info['user_type'][agent_id] == "influencer":
                 profile['other_info']['user_type'] = AgentType.INFLUENCER
-                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.5, 24)
+                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.04, 24)
             elif agent_info['user_type'][agent_id] == "robot":
                 profile['other_info']['user_type'] = AgentType.ROBOT
-                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.2, 24)
+                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.02, 24)
             else:
                 profile['other_info']['user_type'] = AgentType.REGULAR
-                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.03, 24)
+                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.02, 24)
 
 
         user_info = UserInfo(

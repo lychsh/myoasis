@@ -33,7 +33,7 @@ def preprocess_chinese_text(text):
     words = jieba.cut(text)
     
     # 过滤停用词和短词
-    stop_words = {'的', '了', '在', '是', '我', '有', '和', '就', '不', '人', '都', '一', '一个', '上', '也', '很', '到', '说', '要', '去', '你', '会', '着', '没有', '看', '好', '自己', '这个', '那个'}
+    stop_words = {'的', '了', '在', '是', '我', '有', '和', '就', '不', '人', '都', '一', '一个', '上', '也', '很', '到', '说', '要', '去', '你', '会', '着', '没有', '看', '好', '自己', '这个', '那个','一直','以及', '我们'}
     filtered_words = [word for word in words if len(word) > 1 and word not in stop_words]
     
     return ' '.join(filtered_words)
@@ -134,33 +134,38 @@ print(f"高区分度词汇总数: {len(top_discrimination_ai_words)}")
 print(f"官方内容特征词汇数: {len(top_real_ai_words)}")
 print(f"AI虚假信息特征词汇数: {len(top_fake_ai_words)}")
 
-# 修复可视化 - 使用英文标签避免字体问题
-fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+
 
 # 1. 官方内容 vs 普通虚假信息 - 高区分度词汇
-ax1 = axes[0, 0]
+plt.figure(figsize=(12, 8))
 top_combined = pd.concat([
     top_real_words.head(10).assign(type='Official'),
     top_fake_words.head(10).assign(type='Fake')
 ])
-sns.barplot(data=top_combined, x='discrimination_score', y='word', hue='type', ax=ax1)
-ax1.set_title('Official vs Fake News\nTop 10 Discriminative Keywords', fontsize=14, fontweight='bold')
-ax1.set_xlabel('Discrimination Score')
-ax1.set_ylabel('Keywords')
+sns.barplot(data=top_combined, x='discrimination_score', y='word', hue='type')
+plt.title('官方 vs 虚假信息top 10%区分度关键词', fontsize=14, fontweight='bold')
+plt.xlabel('区分度分数')
+plt.ylabel('关键字')
+plt.tight_layout()
+plt.savefig('./imgs/official_fake_discriminative_keywords.png', dpi=300, bbox_inches='tight')
+plt.show()
 
 # 2. 官方内容 vs AI虚假信息 - 高区分度词汇
-ax2 = axes[0, 1]
+plt.figure(figsize=(12, 8))
 top_combined_ai = pd.concat([
     top_real_ai_words.head(10).assign(type='Official'),
     top_fake_ai_words.head(10).assign(type='AI Fake')
 ])
-sns.barplot(data=top_combined_ai, x='discrimination_score', y='word', hue='type', ax=ax2)
-ax2.set_title('Official vs AI Fake News\nTop 10 Discriminative Keywords', fontsize=14, fontweight='bold')
-ax2.set_xlabel('Discrimination Score')
-ax2.set_ylabel('Keywords')
+sns.barplot(data=top_combined_ai, x='discrimination_score', y='word', hue='type')
+plt.title('官方 vs AI虚假信息top 10%区分度关键词', fontsize=14, fontweight='bold')
+plt.xlabel('区分度分数')
+plt.ylabel('关键字')
+plt.tight_layout()
+plt.savefig('./imgs/official_aifake_ai_discriminative_keywords.png', dpi=300, bbox_inches='tight')
+plt.show()
 
 # 3. 不同类型文本的特征词汇分布
-ax3 = axes[1, 0]
+plt.figure(figsize=(10, 6))
 type_comparison = pd.DataFrame({
     'Type': ['Official', 'Fake', 'AI Fake'],
     'Feature Count': [
@@ -169,12 +174,16 @@ type_comparison = pd.DataFrame({
         len(top_fake_ai_words)
     ]
 })
-sns.barplot(data=type_comparison, x='Type', y='Feature Count', ax=ax3, hue='Type', legend=False)
-ax3.set_title('High-Discrimination Feature Count by Content Type', fontsize=14, fontweight='bold')
-ax3.set_ylabel('Feature Count')
+sns.barplot(data=type_comparison, x='Type', y='Feature Count', hue='Type', legend=False)
+plt.title('高区分特征统计', fontsize=14, fontweight='bold')
+plt.xlabel('类别')
+plt.ylabel('特征词汇数量')
+plt.tight_layout()
+plt.savefig('./imgs/feature_count.png', dpi=300, bbox_inches='tight')
+plt.show()
 
 # 4. TF-IDF分数对比
-ax4 = axes[1, 1]
+plt.figure(figsize=(12, 8))
 sample_words = list(top_real_words.head(5)['word']) + list(top_fake_words.head(5)['word'])
 comparison_data = []
 for word in sample_words:
@@ -183,13 +192,12 @@ for word in sample_words:
         comparison_data.append({'word': word, 'score': row['real_tfidf'], 'type': 'Official'})
         comparison_data.append({'word': word, 'score': row['fake_tfidf'], 'type': 'Fake'})
 comparison_df = pd.DataFrame(comparison_data)
-sns.barplot(data=comparison_df, x='score', y='word', hue='type', ax=ax4)
-ax4.set_title('TF-IDF Score Comparison for Representative Keywords', fontsize=14, fontweight='bold')
-ax4.set_xlabel('TF-IDF Score')
-ax4.set_ylabel('Keywords')
-
+sns.barplot(data=comparison_df, x='score', y='word', hue='type')
+plt.title('TF-IDF分数对比', fontsize=14, fontweight='bold')
+plt.xlabel('TF-IDF分数')
+plt.ylabel('关键字')
 plt.tight_layout()
-plt.savefig('tfidf_analysis_results.png', dpi=300, bbox_inches='tight')
+plt.savefig('./imgs/tfidf_comparison.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # 打印详细的关键词分析结果

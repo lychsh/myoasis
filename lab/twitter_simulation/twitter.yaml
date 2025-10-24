@@ -16,6 +16,8 @@ simulation:
     - search_user
     - trend
     - refresh
+    - quote_post
+    - repost
     - do_nothing
     - create_comment
 inference:
