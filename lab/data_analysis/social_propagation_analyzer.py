@@ -1,348 +1,341 @@
 import sqlite3
 import pandas as pd
 import numpy as np
-import statsmodels.api as sm
-from tick.hawkes import HawkesExpKern
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.feature_extraction.text import TfidfVectorizer
+from typing import Dict, List, Tuple, Optional, Any
+from functools import reduce, partial
+from operator import itemgetter
 from snownlp import SnowNLP
-import jieba
+import warnings
 
-class PropagationAnalyzerOptimized:
-    def __init__(self, db_path):
-        self.db_path = db_path
-        self.conn = None
-        self.data = None
-        
-    def connect_db(self):
-        """连接数据库"""
-        self.conn = sqlite3.connect(self.db_path)
-        
-    def load_propagation_data(self):
-        """加载传播数据"""
-        try:
-            # 加载核心数据表
-            posts_df = pd.read_sql("SELECT * FROM post", self.conn)
-            users_df = pd.read_sql("SELECT user_id FROM user", self.conn)
-            follows_df = pd.read_sql("SELECT * FROM follow", self.conn)
-            likes_df = pd.read_sql("SELECT * FROM like", self.conn)
-            dislikes_df = pd.read_sql("SELECT * FROM dislike", self.conn)
-            comments_df = pd.read_sql("SELECT * FROM comment", self.conn)
-            shares_df = pd.read_sql("SELECT * FROM trace WHERE action = 'share'", self.conn) if 'share' in pd.read_sql("SELECT DISTINCT action FROM trace", self.conn)['action'].values else None
-            
-            # 计算用户网络密度
-            user_network = follows_df.groupby('followee_id').size().reset_index(name='follower_count')
-            
-            propagation_data = []
-            
-            for _, post in posts_df.iterrows():
-                post_id = post['post_id']
-                user_id = post['user_id']
-                
-                # 计算传播指标
-                shares = post.get('num_shares', 0)
-                likes_count = len(likes_df[likes_df['post_id'] == post_id])
-                comments_count = len(comments_df[comments_df['post_id'] == post_id])
-                total_engagement = shares + likes_count + comments_count
-                
-                # 网络密度
-                network_density = user_network[
-                    user_network['followee_id'] == user_id
-                ]['follower_count'].iloc[0] if user_id in user_network['followee_id'].values else 1
-                
-                # 情绪强度分析
-                emotion_intensity = self.analyze_emotion_snownlp(post.get('content', ''))
-                
-                # 时间序列数据
-                time_series = self.get_propagation_timestamps(post_id, likes_df, comments_df)
-                
-                propagation_data.append({
-                    'post_id': post_id,
-                    'user_id': user_id,
-                    'shares': shares,
-                    'total_engagement': total_engagement,
-                    'network_density': network_density,
-                    'emotion_intensity': emotion_intensity,
-                    'content': post.get('content', ''),
-                    'time_series': time_series,
-                    'event_count': len(time_series)
-                })
-            
-            self.data = pd.DataFrame(propagation_data)
-            return self.data
-            
-        except Exception as e:
-            print(f"数据加载错误: {e}")
-            return None
-    
-    def analyze_emotion_snownlp(self, text):
-        """使用SnowNLP分析情绪强度"""
-        if not isinstance(text, str) or len(text.strip()) == 0:
-            return 0.5  # 中性
-            
-        try:
-            s = SnowNLP(text)
-            # SnowNLP的情感分析返回0-1的值，越接近1越正面
-            sentiment = s.sentiments
-            # 转换为情绪强度（远离0.5的程度）
-            intensity = abs(sentiment - 0.5) * 2
-            return intensity
-        except:
-            return 0.5
-    
-    def get_propagation_timestamps(self, post_id, likes_df, comments_df):
-        """获取传播时间戳"""
-        timestamps = []
-        
-        # 从likes表获取时间
-        post_likes = likes_df[likes_df['post_id'] == post_id]
-        if not post_likes.empty and 'created_at' in post_likes.columns:
-            timestamps.extend(post_likes['created_at'].tolist())
-        
-        # 从comments表获取时间
-        post_comments = comments_df[comments_df['post_id'] == post_id]
-        if not post_comments.empty and 'created_at' in post_comments.columns:
-            timestamps.extend(post_comments['created_at'].tolist())
-        
-        # 如果没有时间数据，生成模拟数据
-        if not timestamps:
-            timestamps = list(range(1, min(11, int(np.random.poisson(5)) + 2)))
-        
-        return sorted([t for t in timestamps if t > 0])
-    
-    def negative_binomial_regression(self):
-        """使用statsmodels进行负二项回归"""
-        if self.data is None or len(self.data) < 3:
-            print("数据不足，无法进行回归分析")
-            return None, None
-        
-        try:
-            # 准备数据
-            y = self.data['shares']
-            X = self.data[['emotion_intensity', 'network_density']]
-            X = sm.add_constant(X)
-            
-            # 负二项回归
-            nb_model = sm.GLM(y, X, family=sm.families.NegativeBinomial())
-            nb_result = nb_model.fit()
-            
-            print("=" * 60)
-            print("负二项回归分析结果")
-            print("=" * 60)
-            print(nb_result.summary())
-            
-            coefficients = {
-                'const': nb_result.params['const'],
-                'emotion_intensity': nb_result.params['emotion_intensity'],
-                'network_density': nb_result.params['network_density']
-            }
-            
-            return nb_result, coefficients
-            
-        except Exception as e:
-            print(f"负二项回归失败: {e}")
-            # 尝试泊松回归
-            try:
-                poisson_model = sm.GLM(y, X, family=sm.families.Poisson())
-                poisson_result = poisson_model.fit()
-                print("泊松回归结果:")
-                print(poisson_result.summary())
-                return poisson_result, None
-            except Exception as e2:
-                print(f"泊松回归也失败: {e2}")
-                return None, None
-    
-    def hawkes_analysis_tick(self, time_series):
-        """使用tick库进行Hawkes过程分析"""
-        if len(time_series) < 3:
-            return 1.0, 1.0, 0.5  # 返回默认值
-            
-        try:
-            # 将时间序列转换为tick需要的格式
-            events = [np.array(time_series)]
-            
-            # 创建并拟合Hawkes模型
-            hawkes = HawkesExpKern(decay=1.0, n_cores=1)
-            hawkes.fit(events)
-            
-            # 获取参数
-            baseline = hawkes.baseline[0]  # 基础传播率 μ
-            adjacency = hawkes.adjacency[0, 0]  # 影响强度 α
-            decay = hawkes.decay[0, 0]  # 衰减系数 δ
-            
-            return baseline, decay, adjacency
-            
-        except Exception as e:
-            print(f"Hawkes分析失败: {e}")
-            return 1.0, 1.0, 0.5
-    
-    def analyze_propagation_patterns(self):
-        """分析所有帖子的传播模式"""
-        if self.data is None:
-            self.load_propagation_data()
-        
-        if self.data is None:
-            return None
-        
-        results = []
-        
-        for _, post in self.data.iterrows():
-            # 使用tick库进行Hawkes分析
-            mu, delta, alpha = self.hawkes_analysis_tick(post['time_series'])
-            
-            results.append({
-                'post_id': post['post_id'],
-                'shares': post['shares'],
-                'emotion_intensity': post['emotion_intensity'],
-                'network_density': post['network_density'],
-                'base_rate_mu': mu,
-                'decay_delta': delta,
-                'influence_alpha': alpha,
-                'event_count': post['event_count'],
-                'virality_score': mu * alpha / delta if delta > 0 else 0
-            })
-        
-        return pd.DataFrame(results)
-    
-    def visualize_analysis(self, results_df):
-        """可视化分析结果"""
-        if results_df is None or len(results_df) == 0:
-            print("没有数据可可视化")
-            return
-        
-        fig, axes = plt.subplots(2, 3, figsize=(18, 12))
-        
-        # 1. 基础传播率分布
-        axes[0, 0].hist(results_df['base_rate_mu'], bins=15, alpha=0.7, color='skyblue', edgecolor='black')
-        axes[0, 0].set_title('Base Rate (μ) Distribution\n基础传播率分布', fontsize=12)
-        axes[0, 0].set_xlabel('Base Rate μ')
-        axes[0, 0].set_ylabel('Frequency')
-        
-        # 2. 衰减系数分布
-        axes[0, 1].hist(results_df['decay_delta'], bins=15, alpha=0.7, color='lightcoral', edgecolor='black')
-        axes[0, 1].set_title('Decay Coefficient (δ) Distribution\n衰减系数分布', fontsize=12)
-        axes[0, 1].set_xlabel('Decay Coefficient δ')
-        axes[0, 1].set_ylabel('Frequency')
-        
-        # 3. 传播力得分分布
-        axes[0, 2].hist(results_df['virality_score'], bins=15, alpha=0.7, color='lightgreen', edgecolor='black')
-        axes[0, 2].set_title('Virality Score Distribution\n传播力得分分布', fontsize=12)
-        axes[0, 2].set_xlabel('Virality Score')
-        axes[0, 2].set_ylabel('Frequency')
-        
-        # 4. 情绪强度 vs 基础传播率
-        axes[1, 0].scatter(results_df['emotion_intensity'], results_df['base_rate_mu'], 
-                          alpha=0.6, color='blue', s=50)
-        axes[1, 0].set_title('Emotion Intensity vs Base Rate\n情绪强度 vs 基础传播率', fontsize=12)
-        axes[1, 0].set_xlabel('Emotion Intensity')
-        axes[1, 0].set_ylabel('Base Rate μ')
-        
-        # 5. 网络密度 vs 基础传播率
-        axes[1, 1].scatter(results_df['network_density'], results_df['base_rate_mu'], 
-                          alpha=0.6, color='red', s=50)
-        axes[1, 1].set_title('Network Density vs Base Rate\n网络密度 vs 基础传播率', fontsize=12)
-        axes[1, 1].set_xlabel('Network Density')
-        axes[1, 1].set_ylabel('Base Rate μ')
-        
-        # 6. 参数关系热力图
-        corr_data = results_df[['base_rate_mu', 'decay_delta', 'emotion_intensity', 'network_density', 'virality_score']]
-        correlation_matrix = corr_data.corr()
-        sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', center=0, ax=axes[1, 2])
-        axes[1, 2].set_title('Parameter Correlation Heatmap\n参数相关性热力图', fontsize=12)
-        
-        plt.tight_layout()
-        plt.savefig('propagation_analysis_optimized.png', dpi=300, bbox_inches='tight')
-        plt.show()
-    
-    def generate_report(self, nb_result, hawkes_results, coefficients):
-        """生成分析报告"""
-        print("\n" + "=" * 70)
-        print("传播分析综合报告 - 基于现有库实现")
-        print("=" * 70)
-        
-        if coefficients:
-            print(f"\n📊 负二项回归系数 (最大似然估计):")
-            print(f"   ├── 常数项 (const): {coefficients['const']:.4f}")
-            print(f"   ├── 情绪强度权重: {coefficients['emotion_intensity']:.4f}")
-            print(f"   └── 网络密度权重: {coefficients['network_density']:.4f}")
-        
-        if hawkes_results is not None and len(hawkes_results) > 0:
-            print(f"\n🔥 Hawkes过程参数统计:")
-            print(f"   ├── 平均基础传播率 μ: {hawkes_results['base_rate_mu'].mean():.4f}")
-            print(f"   ├── 平均衰减系数 δ: {hawkes_results['decay_delta'].mean():.4f}")
-            print(f"   ├── 平均影响强度 α: {hawkes_results['influence_alpha'].mean():.4f}")
-            print(f"   ├── 最高传播力得分: {hawkes_results['virality_score'].max():.4f}")
-            print(f"   └── 平均事件数量: {hawkes_results['event_count'].mean():.1f}")
-        
-        print(f"\n💡 关键发现:")
-        if coefficients and coefficients['emotion_intensity'] > 0:
-            print(f"   • 情绪强度对传播有正面影响")
-        if coefficients and coefficients['network_density'] > 0:
-            print(f"   • 网络密度是传播的重要驱动因素")
-        
-        if hawkes_results is not None:
-            high_viral = hawkes_results[hawkes_results['virality_score'] > hawkes_results['virality_score'].median()]
-            if len(high_viral) > 0:
-                print(f"   • 高传播力内容通常具有较高的基础传播率和适当的影响强度")
-    
-    def run_optimized_analysis(self):
-        """运行优化的完整分析"""
-        print("开始优化的传播分析...")
-        
-        try:
-            # 连接数据库
-            self.connect_db()
-            
-            # 加载数据
-            print("1. 加载传播数据...")
-            self.load_propagation_data()
-            
-            if self.data is None or len(self.data) == 0:
-                print("没有足够的数据进行分析")
-                return None
-            
-            # 负二项回归
-            print("2. 执行负二项回归分析...")
-            nb_result, coefficients = self.negative_binomial_regression()
-            
-            # Hawkes过程分析
-            print("3. 执行Hawkes过程分析...")
-            hawkes_results = self.analyze_propagation_patterns()
-            
-            # 生成报告
-            print("4. 生成分析报告...")
-            self.generate_report(nb_result, hawkes_results, coefficients)
-            
-            # 可视化
-            print("5. 生成可视化图表...")
-            self.visualize_analysis(hawkes_results)
-            
-            # 保存结果
-            if hawkes_results is not None:
-                hawkes_results.to_csv('propagation_analysis_optimized.csv', index=False, encoding='utf-8')
-                print(f"\n✅ 分析完成! 结果已保存到 'propagation_analysis_optimized.csv'")
-            
-            return {
-                'negative_binomial': nb_result,
-                'hawkes_results': hawkes_results,
-                'coefficients': coefficients
-            }
-            
-        except Exception as e:
-            print(f"分析过程中出错: {e}")
-            return None
+warnings.filterwarnings('ignore')
 
-# 使用示例
+# 设置中文字体
+plt.rcParams['font.sans-serif'] = ['SimHei', 'DejaVu Sans']
+plt.rcParams['axes.unicode_minus'] = False
+
+
+# ==================== 可视化工具函数 ====================
+
+def create_histogram(data: pd.Series, title: str, xlabel: str, color: str = 'skyblue',
+                     filename: str = None, bins: int = 15):
+    """创建直方图 """
+    plt.figure(figsize=(10, 6))
+    plt.hist(data, bins=bins, alpha=0.7, color=color, edgecolor='black')
+    plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel('帖子数量')
+    plt.grid(True, alpha=0.3)
+    if filename:
+        plt.savefig(f'{filename}.png', dpi=300, bbox_inches='tight')
+    plt.show()
+
+
+def create_scatter(x_data: pd.Series, y_data: pd.Series, title: str,
+                   xlabel: str, ylabel: str, color: str = 'blue', filename: str = None):
+    """创建散点图 """
+    plt.figure(figsize=(10, 6))
+    plt.scatter(x_data, y_data, alpha=0.6, color=color, s=50)
+    plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.grid(True, alpha=0.3)
+    if filename:
+        plt.savefig(f'{filename}.png', dpi=300, bbox_inches='tight')
+    plt.show()
+
+
+# ==================== 核心分析函数 ====================
+
+def connect_db(db_path: str) -> sqlite3.Connection:
+    return sqlite3.connect(db_path)
+
+
+def load_table_data(conn: sqlite3.Connection, table_name: str) -> pd.DataFrame:
+    return pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
+
+
+def analyze_emotion_snownlp(text: str) -> float:
+    """使用SnowNLP分析情绪强度"""
+    if not isinstance(text, str) or len(text.strip()) == 0:
+        return 0.5
+    try:
+        s = SnowNLP(text)
+        return float(abs(s.sentiments - 0.5) * 2)
+    except:
+        return 0.5
+
+
+def get_propagation_timestamps(post_id: int, likes_df: pd.DataFrame,
+                               comments_df: pd.DataFrame) -> List[int]:
+    """获取传播时间戳"""
+
+    def get_timestamps(df: pd.DataFrame, post_col: str = 'post_id') -> List[int]:
+        if df.empty or 'created_at' not in df.columns:
+            return []
+        return [t for t in df[df[post_col] == post_id]['created_at'].tolist() if t > 0]
+
+    timestamps = get_timestamps(likes_df) + get_timestamps(comments_df, 'post_id')
+    return sorted(timestamps) if timestamps else list(range(1, max(2, int(np.random.poisson(3)) + 1)))
+
+
+def calculate_user_network_density(follows_df: pd.DataFrame) -> pd.DataFrame:
+    """计算用户网络密度"""
+    return (follows_df.groupby('followee_id').size()
+            .reset_index(name='follower_count') if not follows_df.empty
+            else pd.DataFrame(columns=['followee_id', 'follower_count']))
+
+
+def process_post_data(post: pd.Series, likes_df: pd.DataFrame,
+                      comments_df: pd.DataFrame, user_network: pd.DataFrame) -> Dict:
+    """处理单个帖子的数据"""
+    post_id, user_id = post['post_id'], post['user_id']
+
+    likes_count = len(likes_df[likes_df['post_id'] == post_id])
+    comments_count = len(comments_df[comments_df['post_id'] == post_id])
+    shares = post.get('num_shares', 0)
+
+    network_density = (user_network[user_network['followee_id'] == user_id]['follower_count'].iloc[0]
+                       if user_id in user_network['followee_id'].values else 1)
+
+    return {
+        'post_id': post_id,
+        'user_id': user_id,
+        'shares': shares,
+        'likes_count': likes_count,
+        'comments_count': comments_count,
+        'total_engagement': shares + likes_count + comments_count,
+        'network_density': network_density,
+        'emotion_intensity': analyze_emotion_snownlp(post.get('content', '')),
+        'content': post.get('content', ''),
+        'time_series': get_propagation_timestamps(post_id, likes_df, comments_df)
+    }
+
+
+def load_propagation_data(db_path: str) -> Optional[pd.DataFrame]:
+    """加载传播数据"""
+    try:
+        with connect_db(db_path) as conn:
+            tables = {table: load_table_data(conn, table) for table in ['post', 'follow', 'like', 'comment']}
+            posts_df, follows_df, likes_df, comments_df = itemgetter('post', 'follow', 'like', 'comment')(tables)
+
+            user_network = calculate_user_network_density(follows_df)
+            propagation_data = [process_post_data(post, likes_df, comments_df, user_network)
+                                for _, post in posts_df.iterrows()]
+
+            df = pd.DataFrame(propagation_data)
+            df['event_count'] = df['time_series'].apply(len)
+            return df
+    except Exception as e:
+        print(f"数据加载错误: {e}")
+        return None
+
+
+# ==================== 模型分析函数 ====================
+
+def negative_binomial_regression(data: pd.DataFrame) -> Tuple[Any, Dict]:
+    """负二项回归分析"""
+    if data is None or len(data) < 3:
+        print("数据不足，无法进行回归分析")
+        return None, {}
+
+    try:
+        import statsmodels.api as sm
+
+        y = data['shares']
+        X = sm.add_constant(data[['emotion_intensity', 'network_density']])
+
+        nb_model = sm.GLM(y, X, family=sm.families.NegativeBinomial())
+        nb_result = nb_model.fit()
+
+        print("=" * 60)
+        print("负二项回归分析结果")
+        print("=" * 60)
+        print(nb_result.summary())
+
+        coefficients = {param: nb_result.params[param] for param in nb_result.params.index}
+        return nb_result, coefficients
+
+    except Exception as e:
+        print(f"负二项回归失败: {e}")
+        return None, {}
+
+
+def hawkes_analysis_simple(time_series: List[int]) -> Tuple[float, float, float]:
+    """简化的Hawkes过程分析"""
+    if len(time_series) < 2:
+        return 1.0, 1.0, 0.5
+
+    try:
+        events = np.array(time_series)
+        if len(events) > 1:
+            intervals = np.diff(events)
+            base_rate = 1.0 / max(0.1, np.mean(intervals))
+            decay = 1.0 / max(0.1, np.var(intervals) if len(intervals) > 1 else 1.0)
+            influence = min(0.9, len(events) / (max(events) - min(events) + 1))
+            return float(base_rate), float(decay), float(influence)
+        return 1.0, 1.0, 0.5
+    except Exception:
+        return 1.0, 1.0, 0.5
+
+
+def hawkes_analysis(time_series: List[int]) -> tuple:
+    """Hawkes过程分析"""
+    try:
+        # 如果hawkes库可用则使用，否则使用简化版本
+        import hawkes
+        events = np.array(time_series, dtype=float)
+        model = hawkes.HawkesProcess()
+        model.fit(events)
+        return float(model.mu), float(model.beta), float(model.alpha)
+    except ImportError:
+        return hawkes_analysis_simple(time_series)
+
+
+def analyze_propagation_patterns(data: pd.DataFrame) -> pd.DataFrame:
+    """分析传播模式"""
+    if data is None or len(data) == 0:
+        return pd.DataFrame()
+
+    def analyze_post(post: Dict) -> Dict:
+        mu, delta, alpha = hawkes_analysis(post['time_series'])
+        virality = mu * alpha / delta if delta > 0 else 0
+
+        return {
+            'post_id': post['post_id'],
+            'shares': post['shares'],
+            'emotion_intensity': post['emotion_intensity'],
+            'network_density': post['network_density'],
+            'base_rate_mu': mu,
+            'decay_delta': delta,
+            'influence_alpha': alpha,
+            'event_count': post['event_count'],
+            'virality_score': virality
+        }
+
+    return pd.DataFrame([analyze_post(post) for _, post in data.iterrows()])
+
+
+# ==================== 可视化函数 ====================
+
+def create_propagation_visualizations(results_df: pd.DataFrame) -> None:
+    """创建传播分析可视化"""
+    if results_df.empty:
+        print("没有数据可可视化")
+        return
+
+    # 1. 基础传播率分布
+    create_histogram(results_df['base_rate_mu'], '基础传播率(μ)分布', '基础传播率 μ',
+                     'skyblue', '基础传播率分布')
+
+    # 2. 衰减系数分布
+    create_histogram(results_df['decay_delta'], '衰减系数(δ)分布', '衰减系数 δ',
+                     'lightcoral', '衰减系数分布')
+
+    # 3. 传播力得分分布
+    create_histogram(results_df['virality_score'], '传播力得分分布', '传播力得分',
+                     'lightgreen', '传播力得分分布')
+
+    # 4. 情绪强度 vs 基础传播率
+    create_scatter(results_df['emotion_intensity'], results_df['base_rate_mu'],
+                   '情绪强度 vs 基础传播率', '情绪强度', '基础传播率 μ', 'blue',
+                   '情绪强度vs基础传播率')
+
+    # 5. 网络密度 vs 基础传播率
+    create_scatter(results_df['network_density'], results_df['base_rate_mu'],
+                   '网络密度 vs 基础传播率', '网络密度', '基础传播率 μ', 'red',
+                   '网络密度vs基础传播率')
+
+    # 6. 参数相关性热力图
+    plt.figure(figsize=(10, 8))
+    corr_data = results_df[['base_rate_mu', 'decay_delta', 'emotion_intensity',
+                            'network_density', 'virality_score']]
+
+    # 设置中文标签映射
+    chinese_labels = {
+        'base_rate_mu': '基础传播率μ',
+        'decay_delta': '衰减系数δ',
+        'emotion_intensity': '情绪强度',
+        'network_density': '网络密度',
+        'virality_score': '传播力得分'
+    }
+    # 重命名列名为中文
+    corr_data_zh = corr_data.rename(columns=chinese_labels)
+
+    # 绘制热力图
+    sns.heatmap(corr_data_zh.corr(), annot=True, cmap='coolwarm', center=0, fmt='.2f')
+    plt.title('参数相关性热力图')
+    plt.tight_layout()
+    plt.savefig('参数相关性热力图.png', dpi=300, bbox_inches='tight')
+    plt.show()
+
+
+def generate_analysis_report(data: pd.DataFrame, coefficients: Dict,
+                             hawkes_results: pd.DataFrame) -> None:
+    """生成分析报告"""
+    print("\n" + "=" * 70)
+    print("传播分析综合报告")
+    print("=" * 70)
+
+    if data is not None and not data.empty:
+        print(f"\n数据概览:")
+        print(f"   ├── 分析帖子数量: {len(data)}")
+        print(f"   ├── 平均分享数: {data['shares'].mean():.2f}")
+        print(f"   ├── 平均互动数: {data['total_engagement'].mean():.2f}")
+        print(f"   └── 平均事件数: {data['event_count'].mean():.2f}")
+
+    if coefficients:
+        print(f"\n负二项回归系数:")
+        for param, value in coefficients.items():
+            print(f"   ├── {param}: {value:.4f}")
+
+    if hawkes_results is not None and not hawkes_results.empty:
+        print(f"\nHawkes过程参数统计:")
+        print(f"   ├── 平均基础传播率 μ: {hawkes_results['base_rate_mu'].mean():.4f}")
+        print(f"   ├── 平均衰减系数 δ: {hawkes_results['decay_delta'].mean():.4f}")
+        print(f"   ├── 平均影响强度 α: {hawkes_results['influence_alpha'].mean():.4f}")
+        print(f"   └── 平均传播力得分: {hawkes_results['virality_score'].mean():.4f}")
+
+    print(f"\n关键发现:")
+    if coefficients and coefficients.get('emotion_intensity', 0) > 0:
+        print(f"   • 情绪强度对传播有正面影响")
+    if coefficients and coefficients.get('network_density', 0) > 0:
+        print(f"   • 网络密度是传播的重要驱动因素")
+
+
+# ==================== 主流程函数 ====================
+
+def run_complete_analysis(db_path: str) -> Dict[str, Any]:
+    """运行完整的传播分析流程"""
+    print("开始传播分析...")
+
+    data = load_propagation_data(db_path)
+    if data is None or data.empty:
+        print("没有足够的数据进行分析")
+        return {}
+
+    nb_result, coefficients = negative_binomial_regression(data)
+    hawkes_results = analyze_propagation_patterns(data)
+
+    generate_analysis_report(data, coefficients, hawkes_results)
+    create_propagation_visualizations(hawkes_results)
+
+    if not hawkes_results.empty:
+        hawkes_results.to_csv('propagation_analysis.csv', index=False, encoding='utf-8')
+        print(f"\n分析完成! 结果已保存到 'propagation_analysis.csv'")
+
+    return {
+        'data': data,
+        'negative_binomial': nb_result,
+        'coefficients': coefficients,
+        'hawkes_results': hawkes_results
+    }
+
+
 if __name__ == "__main__":
+    print("\n" + "=" * 50)
+    print("传播分析系统")
+    print("=" * 50)
 
-    print("\n" + "="*50)
-    print("传播分析系")
-    print("="*50)
-    
-    # 替换为您的数据库路径
-    db_path = "./../data/fake_info/fake_info.db"  # 根据您的实际路径修改
-    
-    # 创建分析器并运行分析
-    analyzer = PropagationAnalyzerOptimized(db_path)
-    results = analyzer.run_optimized_analysis()
+    results = run_complete_analysis("./../result/test.db")

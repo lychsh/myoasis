@@ -13,7 +13,7 @@ conda activate oasis
 export PYTHONPATH="/home/liying/code/oasis:$PYTHONPATH"
 
 # 设置api_key，这里使用deepseek
-export OPENAI_API_KEY="sk-71b28862eaa54af297d14a0766bbcf36"
+export OPENAI_API_KEY=""
 
 # 运行Twitter模拟程序
 python3 ./twitter_simulation/twitter_simulation.py --config ./twitter_simulation/twitter.yaml

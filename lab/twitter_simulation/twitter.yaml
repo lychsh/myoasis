@@ -3,7 +3,7 @@ data:
   db_path: ./result/test.db
   csv_path: ./data/user_data/data.csv
 simulation:
-  num_timesteps: 2
+  num_timesteps: 10
   clock_factor: 60
   recsys_type: twhin-bert  
   recsys_path: /home/liying/my_models/twhin-bert-base # twitter (from hugging face); reddit(run by code) 
@@ -20,6 +20,7 @@ simulation:
     - repost
     - do_nothing
     - create_comment
+    - create_post
 inference:
   model_type: deepseek-chat
   server_url: https://api.deepseek.com/beta

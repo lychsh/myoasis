@@ -12,7 +12,7 @@ FROM trace
 ORDER BY time_step
 """
 time_steps_df = pd.read_sql_query(time_steps_query, conn)
-time_steps = time_steps_df['time_step'].tolist()
+time_steps = max(time_steps_df['time_step'].tolist())
 print("Time Steps:", time_steps)
 
 # post_id 列表
@@ -26,7 +26,7 @@ for post_id in post_ids:
     scale_data = []
     depth_data = []
     
-    for ts in time_steps:
+    for ts in range(time_steps):
         # 传播规模：累积到该时间步的唯一用户数
         scale_query = f"""
         SELECT COUNT(DISTINCT u.user_id) AS scale

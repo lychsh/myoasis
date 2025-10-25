@@ -255,7 +255,7 @@ async def generate_agents_csv(
                 profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.02, 24)
             else:
                 profile['other_info']['user_type'] = AgentType.REGULAR
-                profile['other_info']['active_threshold'] = np.random.uniform(0.01, 0.02, 24)
+                profile['other_info']['active_threshold'] = np.random.uniform(0.0, 0.01, 24)
 
 
         user_info = UserInfo(
